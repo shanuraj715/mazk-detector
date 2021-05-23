@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color:#2C3E50 ;
+    height: 7vh;
+    display:grid;
+    place-items: center;
+}
+.navinner{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-decoration: none;
+list-style-type: none;    
+    flex-direction: row;
+    color: white;
+}
+.navlinks li{
+    padding-right: 20px;
+}
+.logo{
+    height:100%;
+}
+.logoimg{
+    height:100%
+}
+.list{
+    display:flex;
+    justify-content: center;
+align-items: center;
+}
+.list li{
+
+    height:100%;
+
+}
+.burger{
+    display:none;
+}
+.burger-inner{
+     display: flex;
+     flex-direction: column;
+    
+}
+.line1{
+     height:5px;
+     background-color: white;
+     width: 35px;
+     margin-bottom: 5px;
+}
+.line2{
+     height:5px;
+     background-color: white;
+     width: 35px;
+     margin-bottom: 5px;
+}
+.line3{
+     height:5px;
+     background-color: white;
+     width: 35px;
+}
+.mainimg{
+    width:100%;
+    height:auto;
+}
+.footer{
+    height:4vh;
+     background-color:#2C3E50;
+     color:white;
+     display:grid;
+     place-items: center;
+}
+.mainsection{
+    height:89vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.mainheading{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.secondheading{
+font-size: 1.6rem;
+}
+.secondheading span{
+    font-size: 2rem;
+    font-weight: 550;
+}
+.mainbtn{
+    background-color:#2C3E50 !important;
+    color: white !important;
+    padding:14px 24px !important;
+    font-size: 1.2rem !important;
+    margin-top: 20px;
+}
+li a {
+    color:white;
+    text-decoration: none;
+}
+li a:hover{
+    color: rgb(218, 218, 218);
+}
+@media screen and (max-width: 768px) {
+    .mainbtn{
+    background-color:#2C3E50 !important;
+    color: white !important;
+    padding:8px 14px !important;
+    font-size: 1rem !important;
+    margin-top: 20px;
+}
+    .writings{
+        display:flex;
+        justify-content: center;
+align-items: center;
+flex-direction: column;
+    }
+    .secondheading{
+font-size: 1.4rem;
+}
+.secondheading span{
+    font-size: 1.85rem;
+    font-weight: 550;
+}
+.mainheading{
+    font-size: 2.4rem;
+}
+    .burger{
+        display:block;
+    }
+    .list{
+         display:none;
+    }
+}
