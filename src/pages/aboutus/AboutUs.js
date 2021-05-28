@@ -18,7 +18,7 @@ class AboutUs extends Component {
               <title>About Us | {conf.APP_NAME}</title>
             </Helmet>
             <Header />
-            <div className="container  pt-5 aboutcontainer">
+            <div className="container pt-5 aboutcontainer">
               <div className="row aboutmin">
                 <div className="col col-12 col-md-12 col-lg-6">
                   <img
@@ -44,12 +44,12 @@ class AboutUs extends Component {
                 </div>
               </div>
             </div>
-
+ 
             <div className="container p-2">
               <h1 className="text-center">Our team</h1>
               <br />
               <br />
-              <div className="row">
+              <div className="row pb-5">
                 <Card
                   image={shanu}
                   uname="Shanu Raj"

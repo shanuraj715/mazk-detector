@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    width: 100vw;
+}
 .navbar{
     background-color:#2C3E50 ;
     height: 7vh;
@@ -79,11 +85,14 @@ align-items: center;
      color:white;
      display:grid;
      place-items: center;
+     position: fixed;
+     bottom: 0;
+     width: 100vw;
 }
 .mainsection{
     min-height:89vh;
     display:flex;
-    margin:5px;
+    margin: 0;
     justify-content: center;
     align-items: center;
     flex-direction:column;
@@ -125,7 +134,7 @@ li a:hover{
 
 }
 .aboutcontainer{
-    min-height: 70vh;
+    min-height: 90vh;
     display:grid;
     place-items: center;
 
@@ -137,6 +146,9 @@ text-align: justify;
 .cardcontainer{
     display:grid;
     place-items: center;
+}
+.hiddenoverflow{
+    overflow:hidden !important;
 }
 @media screen and (max-width: 768px) {
     .aboutcontent{
@@ -171,4 +183,9 @@ font-size: 1.4rem;
     .list{
          display:none;
     }
+}
+
+
+.red{
+    color: #d93025;
 }

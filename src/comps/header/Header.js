@@ -11,6 +11,7 @@ export default class Header extends Component {
    const slider = document.getElementById("slider");
    
      slider.classList.toggle("slideropen");
+     document.body.classList.toggle("hiddenoverflow")
   
  
    
@@ -20,7 +21,7 @@ export default class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav >
+        <nav>
           <div className="container-fluid navbar">
             <div className="container navinner">
               <div className="logo">

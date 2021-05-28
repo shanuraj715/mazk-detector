@@ -13,6 +13,7 @@ import * as knnClassifier from '@tensorflow-models/knn-classifier'
 
 
 
+
 import m1 from '../../images/m/1.jpg'
 import m2 from '../../images/m/2.jpg'
 import m3 from '../../images/m/3.jpg'
@@ -53,6 +54,107 @@ import m37 from '../../images/m/37.jpg'
 import m38 from '../../images/m/38.jpg'
 import m39 from '../../images/m/39.jpg'
 import m40 from '../../images/m/40.jpg'
+import m41 from '../../images/m/41.jpg'
+import m42 from '../../images/m/42.jpg'
+import m43 from '../../images/m/43.jpg'
+import m44 from '../../images/m/44.jpg'
+import m45 from '../../images/m/45.jpg'
+import m46 from '../../images/m/46.jpg'
+import m47 from '../../images/m/47.jpg'
+import m48 from '../../images/m/48.jpg'
+import m49 from '../../images/m/49.jpg'
+import m50 from '../../images/m/50.jpg'
+import m51 from '../../images/m/51.jpg'
+import m52 from '../../images/m/52.jpg'
+import m53 from '../../images/m/53.jpg'
+import m54 from '../../images/m/54.jpg'
+import m55 from '../../images/m/55.jpg'
+import m56 from '../../images/m/56.jpg'
+import m57 from '../../images/m/57.jpg'
+import m58 from '../../images/m/58.jpg'
+import m59 from '../../images/m/59.jpg'
+import m60 from '../../images/m/60.jpg'
+import m61 from '../../images/m/61.jpg'
+import m62 from '../../images/m/62.jpg'
+import m63 from '../../images/m/63.jpg'
+import m64 from '../../images/m/64.jpg'
+import m65 from '../../images/m/65.jpg'
+import m66 from '../../images/m/66.jpg'
+import m67 from '../../images/m/67.jpg'
+import m68 from '../../images/m/68.jpg'
+import m69 from '../../images/m/69.jpg'
+import m70 from '../../images/m/70.jpg'
+import m71 from '../../images/m/71.jpg'
+import m72 from '../../images/m/72.jpg'
+import m73 from '../../images/m/73.jpg'
+import m74 from '../../images/m/74.jpg'
+import m75 from '../../images/m/75.jpg'
+import m76 from '../../images/m/76.jpg'
+import m77 from '../../images/m/77.jpg'
+import m78 from '../../images/m/78.jpg'
+import m79 from '../../images/m/79.jpg'
+import m80 from '../../images/m/80.jpg'
+import m81 from '../../images/m/81.jpg'
+import m82 from '../../images/m/82.jpg'
+import m83 from '../../images/m/83.jpg'
+import m84 from '../../images/m/84.jpg'
+import m85 from '../../images/m/85.jpg'
+import m86 from '../../images/m/86.jpg'
+import m87 from '../../images/m/87.jpg'
+import m88 from '../../images/m/88.jpg'
+import m89 from '../../images/m/89.jpg'
+import m90 from '../../images/m/90.jpg'
+import m91 from '../../images/m/91.jpg'
+import m92 from '../../images/m/92.jpg'
+import m93 from '../../images/m/93.jpg'
+import m94 from '../../images/m/94.jpg'
+import m95 from '../../images/m/95.jpg'
+import m96 from '../../images/m/96.jpg'
+import m97 from '../../images/m/97.jpg'
+import m98 from '../../images/m/98.jpg'
+import m99 from '../../images/m/99.jpg'
+import m100 from '../../images/m/100.jpg'
+import m101 from '../../images/m/101.jpg'
+import m102 from '../../images/m/102.jpg'
+import m103 from '../../images/m/103.jpg'
+import m104 from '../../images/m/104.jpg'
+import m105 from '../../images/m/105.jpg'
+import m106 from '../../images/m/106.jpg'
+import m107 from '../../images/m/107.jpg'
+import m108 from '../../images/m/108.jpg'
+import m109 from '../../images/m/109.jpg'
+import m110 from '../../images/m/110.jpg'
+import m111 from '../../images/m/111.jpg'
+import m112 from '../../images/m/112.jpg'
+import m113 from '../../images/m/113.jpg'
+import m114 from '../../images/m/114.jpg'
+import m115 from '../../images/m/115.jpg'
+import m116 from '../../images/m/116.jpg'
+import m117 from '../../images/m/117.jpg'
+import m118 from '../../images/m/118.jpg'
+import m119 from '../../images/m/119.jpg'
+import m120 from '../../images/m/120.jpg'
+import m121 from '../../images/m/121.jpg'
+import m122 from '../../images/m/122.jpg'
+import m123 from '../../images/m/123.jpg'
+import m124 from '../../images/m/124.jpg'
+import m125 from '../../images/m/125.jpg'
+import m126 from '../../images/m/126.jpg'
+import m127 from '../../images/m/127.jpg'
+import m128 from '../../images/m/128.jpg'
+import m129 from '../../images/m/129.jpg'
+import m130 from '../../images/m/130.jpg'
+import m131 from '../../images/m/131.jpg'
+import m132 from '../../images/m/132.jpg'
+import m133 from '../../images/m/133.jpg'
+import m134 from '../../images/m/134.jpg'
+import m135 from '../../images/m/135.jpg'
+import m136 from '../../images/m/136.jpg'
+import m137 from '../../images/m/137.jpg'
+import m138 from '../../images/m/138.jpg'
+import m139 from '../../images/m/139.jpg'
+import m140 from '../../images/m/140.jpg'
+import m141 from '../../images/m/141.jpg'
 
 
 import nm1 from '../../images/nm/1.jpg'
@@ -95,12 +197,42 @@ import nm37 from '../../images/nm/37.jpg'
 import nm38 from '../../images/nm/38.jpg'
 import nm39 from '../../images/nm/39.jpg'
 import nm40 from '../../images/nm/40.jpg'
+import nm41 from '../../images/nm/41.jpg'
+import nm42 from '../../images/nm/42.jpg'
+import nm43 from '../../images/nm/43.jpg'
+import nm44 from '../../images/nm/44.jpg'
+import nm45 from '../../images/nm/45.jpg'
+import nm46 from '../../images/nm/46.jpg'
+import nm47 from '../../images/nm/47.jpg'
+import nm48 from '../../images/nm/48.jpg'
+import nm49 from '../../images/nm/49.jpg'
+import nm50 from '../../images/nm/50.jpg'
+import nm51 from '../../images/nm/51.jpg'
+import nm52 from '../../images/nm/52.jpg'
+import nm53 from '../../images/nm/53.jpg'
+import nm54 from '../../images/nm/54.jpg'
+import nm55 from '../../images/nm/55.jpg'
+import nm56 from '../../images/nm/56.jpg'
+import nm57 from '../../images/nm/57.jpg'
+import nm58 from '../../images/nm/58.jpg'
+import nm59 from '../../images/nm/59.jpg'
+import nm60 from '../../images/nm/60.jpg'
+import nm61 from '../../images/nm/61.jpg'
+import nm62 from '../../images/nm/62.jpg'
+import nm63 from '../../images/nm/63.jpg'
+import nm64 from '../../images/nm/64.jpg'
+import nm65 from '../../images/nm/65.jpg'
+import nm66 from '../../images/nm/66.jpg'
+import nm67 from '../../images/nm/67.jpg'
+import nm68 from '../../images/nm/68.jpg'
+import nm69 from '../../images/nm/69.jpg'
+import nm70 from '../../images/nm/70.jpg'
 
 
 
-import userImage from '../../images/9.jpg'
+// import userImage from '../../images/9.jpg'
 
-window.mobilenewModule = ''
+window.mobilenetModule = ''
 window.classifier = ''
 
 export default class Detect extends Component {
@@ -115,6 +247,8 @@ export default class Detect extends Component {
             this.setState({ isLearning: false })
             this.enableVideo()
         }
+        
+        console.log( typeof window.classifier, window.classifier )
     }
 
     componentWillUnmount(){
@@ -123,8 +257,8 @@ export default class Detect extends Component {
         window.classifier = ''
     }
 
+
     start = async () => {
-        
 
         // Predict class for the test image
         const testImage = document.getElementById('test-img');
@@ -132,7 +266,6 @@ export default class Detect extends Component {
         const logits = window.mobilenetModule.infer(tfTestImage, 'conv_preds');
         const prediction = await window.classifier.predictClass(logits);
 
-        // Add a border to the test image to display the prediction result
         if (prediction.label == 1) { // no mask - red border
             console.log("False")
         } else { // has mask - green border
@@ -168,18 +301,13 @@ export default class Detect extends Component {
     }
 
     fillImage = () => {
-        let image = document.getElementById('test')
         let canvas = document.getElementById('canvas')
-        // let ctx = canvas.getContext('2d')
-        let img_data = canvas.toDataURL("image/jpg")
-        image.src = img_data
         
 
         const testImage = document.getElementById('test-img');
         testImage.src = canvas.toDataURL('image/jpg')
-        let img = canvas.toDataURL('image/jpg')
+        // let img = canvas.toDataURL('image/jpg')
         setTimeout( () =>{
-
             this.start()
         }, 280)
     }
@@ -212,15 +340,19 @@ export default class Detect extends Component {
     }
 
     stop = () => {
-        window.stream.getTracks().forEach(function(track) {
-            track.stop();
-        });
+        try{
+            window.stream.getTracks().forEach(function(track) {
+                track.stop();
+            });
+        }
+        catch( err ){
+            console.log( err )
+        }
     }
 
     render() {
         return(
             <React.Fragment>
-                {/* { consoel.log( typeof window.)} */}
                 
                 <Helmet>
                     <title>Detect Mask | {conf.APP_NAME}</title>
@@ -267,6 +399,107 @@ export default class Detect extends Component {
                     <img src={ m38 } className="mask-img" alt="" />
                     <img src={ m39 } className="mask-img" alt="" />
                     <img src={ m40 } className="mask-img" alt="" />
+                    <img src={ m41 } className="mask-img" alt="" />
+                    <img src={ m42 } className="mask-img" alt="" />
+                    <img src={ m43 } className="mask-img" alt="" />
+                    <img src={ m44 } className="mask-img" alt="" />
+                    <img src={ m45 } className="mask-img" alt="" />
+                    <img src={ m46 } className="mask-img" alt="" />
+                    <img src={ m47 } className="mask-img" alt="" />
+                    <img src={ m48 } className="mask-img" alt="" />
+                    <img src={ m49 } className="mask-img" alt="" />
+                    <img src={ m50 } className="mask-img" alt="" />
+                    <img src={ m51 } className="mask-img" alt="" />
+                    <img src={ m52 } className="mask-img" alt="" />
+                    <img src={ m53 } className="mask-img" alt="" />
+                    <img src={ m54 } className="mask-img" alt="" />
+                    <img src={ m55 } className="mask-img" alt="" />
+                    <img src={ m56 } className="mask-img" alt="" />
+                    <img src={ m57 } className="mask-img" alt="" />
+                    <img src={ m58 } className="mask-img" alt="" />
+                    <img src={ m59 } className="mask-img" alt="" />
+                    <img src={ m60 } className="mask-img" alt="" />
+                    <img src={ m61 } className="mask-img" alt="" />
+                    <img src={ m62 } className="mask-img" alt="" />
+                    <img src={ m63 } className="mask-img" alt="" />
+                    <img src={ m64 } className="mask-img" alt="" />
+                    <img src={ m65 } className="mask-img" alt="" />
+                    <img src={ m66 } className="mask-img" alt="" />
+                    <img src={ m67 } className="mask-img" alt="" />
+                    <img src={ m68 } className="mask-img" alt="" />
+                    <img src={ m69 } className="mask-img" alt="" />
+                    <img src={ m70 } className="mask-img" alt="" />
+                    <img src={ m71 } className="mask-img" alt="" />
+                    <img src={ m72 } className="mask-img" alt="" />
+                    <img src={ m73 } className="mask-img" alt="" />
+                    <img src={ m74 } className="mask-img" alt="" />
+                    <img src={ m75 } className="mask-img" alt="" />
+                    <img src={ m76 } className="mask-img" alt="" />
+                    <img src={ m77 } className="mask-img" alt="" />
+                    <img src={ m78 } className="mask-img" alt="" />
+                    <img src={ m79 } className="mask-img" alt="" />
+                    <img src={ m80 } className="mask-img" alt="" />
+                    <img src={ m81 } className="mask-img" alt="" />
+                    <img src={ m82 } className="mask-img" alt="" />
+                    <img src={ m83 } className="mask-img" alt="" />
+                    <img src={ m84 } className="mask-img" alt="" />
+                    <img src={ m85} className="mask-img" alt="" />
+                    <img src={ m86 } className="mask-img" alt="" />
+                    <img src={ m87 } className="mask-img" alt="" />
+                    <img src={ m88 } className="mask-img" alt="" />
+                    <img src={ m89 } className="mask-img" alt="" />
+                    <img src={ m90 } className="mask-img" alt="" />
+                    <img src={ m91 } className="mask-img" alt="" />
+                    <img src={ m92 } className="mask-img" alt="" />
+                    <img src={ m93 } className="mask-img" alt="" />
+                    <img src={ m94 } className="mask-img" alt="" />
+                    <img src={ m95 } className="mask-img" alt="" />
+                    <img src={ m96 } className="mask-img" alt="" />
+                    <img src={ m97 } className="mask-img" alt="" />
+                    <img src={ m98 } className="mask-img" alt="" />
+                    <img src={ m99 } className="mask-img" alt="" />
+                    <img src={ m100 } className="mask-img" alt="" />
+                    <img src={ m101 } className="mask-img" alt="" />
+                    <img src={ m102 } className="mask-img" alt="" />
+                    <img src={ m103 } className="mask-img" alt="" />
+                    <img src={ m104 } className="mask-img" alt="" />
+                    <img src={ m105 } className="mask-img" alt="" />
+                    <img src={ m106 } className="mask-img" alt="" />
+                    <img src={ m107 } className="mask-img" alt="" />
+                    <img src={ m108 } className="mask-img" alt="" />
+                    <img src={ m109 } className="mask-img" alt="" />
+                    <img src={ m110 } className="mask-img" alt="" />
+                    <img src={ m111 } className="mask-img" alt="" />
+                    <img src={ m112 } className="mask-img" alt="" />
+                    <img src={ m113 } className="mask-img" alt="" />
+                    <img src={ m114 } className="mask-img" alt="" />
+                    <img src={ m115 } className="mask-img" alt="" />
+                    <img src={ m116 } className="mask-img" alt="" />
+                    <img src={ m117 } className="mask-img" alt="" />
+                    <img src={ m118 } className="mask-img" alt="" />
+                    <img src={ m119 } className="mask-img" alt="" />
+                    <img src={ m120 } className="mask-img" alt="" />
+                    <img src={ m121 } className="mask-img" alt="" />
+                    <img src={ m122 } className="mask-img" alt="" />
+                    <img src={ m123 } className="mask-img" alt="" />
+                    <img src={ m124 } className="mask-img" alt="" />
+                    <img src={ m125 } className="mask-img" alt="" />
+                    <img src={ m126 } className="mask-img" alt="" />
+                    <img src={ m127 } className="mask-img" alt="" />
+                    <img src={ m128 } className="mask-img" alt="" />
+                    <img src={ m129 } className="mask-img" alt="" />
+                    <img src={ m130 } className="mask-img" alt="" />
+                    <img src={ m131 } className="mask-img" alt="" />
+                    <img src={ m132 } className="mask-img" alt="" />
+                    <img src={ m133 } className="mask-img" alt="" />
+                    <img src={ m134 } className="mask-img" alt="" />
+                    <img src={ m135 } className="mask-img" alt="" />
+                    <img src={ m136 } className="mask-img" alt="" />
+                    <img src={ m137 } className="mask-img" alt="" />
+                    <img src={ m138 } className="mask-img" alt="" />
+                    <img src={ m139 } className="mask-img" alt="" />
+                    <img src={ m140 } className="mask-img" alt="" />
+                    <img src={ m141 } className="mask-img" alt="" />
 
                     
                     <img src={ nm1 } className="no-mask-img" alt="" />
@@ -309,10 +542,41 @@ export default class Detect extends Component {
                     <img src={ nm38 } className="no-mask-img" alt="" />
                     <img src={ nm39 } className="no-mask-img" alt="" />
                     <img src={ nm40 } className="no-mask-img" alt="" />
+                    <img src={ nm41 } className="no-mask-img" alt="" />
+                    <img src={ nm42 } className="no-mask-img" alt="" />
+                    <img src={ nm43 } className="no-mask-img" alt="" />
+                    <img src={ nm44 } className="no-mask-img" alt="" />
+                    <img src={ nm45 } className="no-mask-img" alt="" />
+                    <img src={ nm46 } className="no-mask-img" alt="" />
+                    <img src={ nm47 } className="no-mask-img" alt="" />
+                    <img src={ nm48 } className="no-mask-img" alt="" />
+                    <img src={ nm49 } className="no-mask-img" alt="" />
+                    <img src={ nm50 } className="no-mask-img" alt="" />
+                    <img src={ nm51 } className="no-mask-img" alt="" />
+                    <img src={ nm52 } className="no-mask-img" alt="" />
+                    <img src={ nm53 } className="no-mask-img" alt="" />
+                    <img src={ nm54 } className="no-mask-img" alt="" />
+                    <img src={ nm55 } className="no-mask-img" alt="" />
+                    <img src={ nm56 } className="no-mask-img" alt="" />
+                    <img src={ nm57 } className="no-mask-img" alt="" />
+                    <img src={ nm58 } className="no-mask-img" alt="" />
+                    <img src={ nm59 } className="no-mask-img" alt="" />
+                    <img src={ nm60 } className="no-mask-img" alt="" />
+                    <img src={ nm61 } className="no-mask-img" alt="" />
+                    <img src={ nm62 } className="no-mask-img" alt="" />
+                    <img src={ nm63 } className="no-mask-img" alt="" />
+                    <img src={ nm64 } className="no-mask-img" alt="" />
+                    <img src={ nm65 } className="no-mask-img" alt="" />
+                    <img src={ nm66 } className="no-mask-img" alt="" />
+                    <img src={ nm67 } className="no-mask-img" alt="" />
+                    <img src={ nm68 } className="no-mask-img" alt="" />
+                    <img src={ nm69 } className="no-mask-img" alt="" />
+                    <img src={ nm70 } className="no-mask-img" alt="" />
 
 
                 </div>
-                <img id="test-img" crossOrigin="anonymous" src={ userImage }  style={{'width': '200px'}} />
+                <a id="downloadAnchorElem"></a>
+                <img id="test-img" crossOrigin="anonymous" src=""  style={{'display': 'none'}} />
                 <section>
                     <div className="container mainsection">
                         <div className="row">
@@ -328,7 +592,6 @@ export default class Detect extends Component {
                             <div className="col col-12 col-lg-6 ">
                                 <div className="imgmain">
                                     <canvas id="canvas" className="w-100"></canvas>
-                                {/* <img src={Mainbg} className="img-fluid homecol" id="user-img" alt="..." /> */}
                                 </div>
                             </div>
                         </div>
