@@ -20,12 +20,11 @@ export default class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav style={{'marginBottom': '5px'}}>
+        <nav >
           <div className="container-fluid navbar">
             <div className="container navinner">
               <div className="logo">
-                <img src={Logo} className="logoimg" alt=""></img> 
-          
+                <img src={Logo} className="logoimg" alt=""></img>
               </div>
               <div className="list">
                 <ul className="navlinks my-auto">
@@ -35,10 +34,9 @@ export default class Header extends Component {
                   <li>
                     <Link to="/about">About Us</Link>
                   </li>
-                
                 </ul>
               </div>
-              <div className="burger " id="burger" onClick={this.slide} >
+              <div className="burger " id="burger" onClick={this.slide}>
                 <div className="burger-inner">
                   <div className="line1"></div>
                   <div className="line2"></div>
@@ -48,23 +46,21 @@ export default class Header extends Component {
             </div>
           </div>
         </nav>
-        <div   id="slider" className="slider d-flex justify-content-center align-items-center flex-direction-row">
-  
-   <div className="bgg"> 
-     
-  </div>
-    
-    <ul className="sliderul">
-      <li><a href="index.html" ><h6 >HOME</h6></a></li>
-      <li><a href="getinvolved.html" ><h6 >About Us</h6></a></li>
-      <li><a href="latestupdates.html" ><h6 >API</h6> </a></li>
-      
-      
-     
-    </ul>
- 
-   
-    </div>
+        <div
+          id="slider"
+          className="slider d-flex justify-content-center align-items-center flex-direction-row"
+        >
+          <div className="bgg"></div>
+
+          <ul className="sliderul">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+          </ul>
+        </div>
       </React.Fragment>
     );
   }

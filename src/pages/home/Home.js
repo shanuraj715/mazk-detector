@@ -23,7 +23,7 @@ class Home extends Component {
         <section>
           <div className="container mainsection">
             <div className="row">
-              <div className="col col-12 col-lg-6 ">
+              <div className="col col-12 col-lg-6 centerr">
                 <div className="writings my-auto">
                   <h1 className="mainheading">Mask Detector</h1>
                   <h5 className="secondheading">

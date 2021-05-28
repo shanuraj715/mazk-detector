@@ -81,11 +81,17 @@ align-items: center;
      place-items: center;
 }
 .mainsection{
-    height:89vh;
+    min-height:89vh;
     display:flex;
+    margin:5px;
     justify-content: center;
     align-items: center;
     flex-direction:column;
+}
+.centerr{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainheading{
     font-size: 4rem;
