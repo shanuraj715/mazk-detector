@@ -163,74 +163,89 @@ export default class Detect extends Component {
     }
 
     render() {
-        return(
-            <React.Fragment>
-                <Helmet>
-                    <title>Detect Mask | {conf.APP_NAME}</title>
-                </Helmet>
-                <Header />
-                <div className="train-images" style={{'display': 'none'}}>
-                    <img src={ m1 } className="mask-img" alt="" />
-                    <img src={ m2 } className="mask-img" alt="" />
-                    <img src={ m3 } className="mask-img" alt="" />
-                    <img src={ m4 } className="mask-img" alt="" />
-                    <img src={ m5 } className="mask-img" alt="" />
-                    <img src={ m6 } className="mask-img" alt="" />
-                    <img src={ m7 } className="mask-img" alt="" />
-                    <img src={ m8 } className="mask-img" alt="" />
-                    <img src={ m9 } className="mask-img" alt="" />
-                    <img src={ m10 } className="mask-img" alt="" />
-                    <img src={ m11 } className="mask-img" alt="" />
-                    <img src={ m12 } className="mask-img" alt="" />
-                    {/* <img src={ m13 } className="mask-img" alt="" /> */}
-                    {/* <img src={ m14 } className="mask-img" alt="" /> */}
+        return (
+          <React.Fragment>
+            <Helmet>
+              <title>Detect Mask | {conf.APP_NAME}</title>
+            </Helmet>
+            <Header />
+            <div className="train-images" style={{ display: "none" }}>
+              <img src={m1} className="mask-img" alt="" />
+              <img src={m2} className="mask-img" alt="" />
+              <img src={m3} className="mask-img" alt="" />
+              <img src={m4} className="mask-img" alt="" />
+              <img src={m5} className="mask-img" alt="" />
+              <img src={m6} className="mask-img" alt="" />
+              <img src={m7} className="mask-img" alt="" />
+              <img src={m8} className="mask-img" alt="" />
+              <img src={m9} className="mask-img" alt="" />
+              <img src={m10} className="mask-img" alt="" />
+              <img src={m11} className="mask-img" alt="" />
+              <img src={m12} className="mask-img" alt="" />
+              {/* <img src={ m13 } className="mask-img" alt="" /> */}
+              {/* <img src={ m14 } className="mask-img" alt="" /> */}
 
-                    
-                    <img src={ nm1 } className="no-mask-img" alt="" />
-                    <img src={ nm2 } className="no-mask-img" alt="" />
-                    <img src={ nm3 } className="no-mask-img" alt="" />
-                    <img src={ nm4 } className="no-mask-img" alt="" />
-                    <img src={ nm5 } className="no-mask-img" alt="" />
-                    <img src={ nm6 } className="no-mask-img" alt="" />
-                    <img src={ nm7 } className="no-mask-img" alt="" />
-                    <img src={ nm8 } className="no-mask-img" alt="" />
-                    <img src={ nm9 } className="no-mask-img" alt="" />
-                    <img src={ nm10 } className="no-mask-img" alt="" />
-                    <img src={ nm11 } className="no-mask-img" alt="" />
-                    <img src={ nm12 } className="no-mask-img" alt="" />
-                    {/* <img src={ nm13 } className="no-mask-img" alt="" /> */}
-                    {/* <img src={ nm14 } className="no-mask-img" alt="" /> */}
-                    {/* <img src={ nm15 } className="no-mask-img" alt="" /> */}
+              <img src={nm1} className="no-mask-img" alt="" />
+              <img src={nm2} className="no-mask-img" alt="" />
+              <img src={nm3} className="no-mask-img" alt="" />
+              <img src={nm4} className="no-mask-img" alt="" />
+              <img src={nm5} className="no-mask-img" alt="" />
+              <img src={nm6} className="no-mask-img" alt="" />
+              <img src={nm7} className="no-mask-img" alt="" />
+              <img src={nm8} className="no-mask-img" alt="" />
+              <img src={nm9} className="no-mask-img" alt="" />
+              <img src={nm10} className="no-mask-img" alt="" />
+              <img src={nm11} className="no-mask-img" alt="" />
+              <img src={nm12} className="no-mask-img" alt="" />
+              {/* <img src={ nm13 } className="no-mask-img" alt="" /> */}
+              {/* <img src={ nm14 } className="no-mask-img" alt="" /> */}
+              {/* <img src={ nm15 } className="no-mask-img" alt="" /> */}
+            </div>
 
+            <section>
+              <div className="container mainsection">
+                <div className="row">
+                  <div
+                    className="col col-12 col-lg-8"
+                    style={{ display: "grid", placeItems: "center" }}
+                  >
+                    <video
+                      src=""
+                      className="w-100"
+                      id="user-video"
+                      controls={true}
+                      autoPlay={false}
+                    />
+                    <button
+                      type="button"
+                      className="btn mainbtn mt-2"
+                      onClick={this.captureVideo}
+                    >
+                      Capture Image
+                    </button>
+                    <br />
+                  </div>
 
-                </div>
-                <img id="test-img" crossOrigin="anonymous" src={ userImage }  style={{'width': '200px'}} />
-                <section>
-                    <div className="container mainsection">
-                        <div className="row">
-                        <div className="col col-12 col-lg-6" style={{'display': 'grid', 'placeItems': 'center'}}>
-                            
-                            <video src='' className="w-100" id="user-video" controls={ true } autoPlay={ false } />
-                            <button type="button" className="btn mainbtn mt-2" onClick={ this.captureVideo }>
-                                Capture Image
-                            </button>
-                            <br />
-                        </div>
-
-                        <div className="col col-12 col-lg-6 ">
-                            <div className="imgmain">
-                                <canvas id="canvas" className="w-100"></canvas>
-                            {/* <img src={Mainbg} className="img-fluid homecol" id="user-img" alt="..." /> */}
-                            </div>
-                        </div>
-                        </div>
+                  <div className="col col-12 col-lg-4 ">
+                    <div className="imgmain">
+                      <img
+                        id="test-img"
+                        crossOrigin="anonymous"
+                        src={userImage}
+                        style={{ width: "200px" }}
+                      />
+                      <canvas id="canvas" className="w-100"></canvas>
+                      {/* <img src={Mainbg} className="img-fluid homecol" id="user-img" alt="..." /> */}
                     </div>
-                    <img src="" id="test" />
-                </section>
-                <Footer />
-                { this.state.isLearning ? <Loading /> : null }
-            </React.Fragment>
-        )
+                  </div>
+                </div>
+              </div>
+              <img src="" id="test" />
+            </section>
+            <Footer />
+            {this.state.isLearning ? <Loading /> : null}
+          </React.Fragment>
+        );
     }
 }
 

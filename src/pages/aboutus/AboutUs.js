@@ -7,6 +7,7 @@ import aboutimg from '../../assets/about.png'
 import shanu from "../../assets/shanu.jpg";
 import harshita from "../../assets/harshita.jpeg";
 import arjun from "../../assets/arjun.jpg";
+import amandeep from "../../assets/amandeep.jpg";
 import Card from '../../comps/card/Card'
 class AboutUs extends Component {
   
@@ -44,7 +45,7 @@ class AboutUs extends Component {
               </div>
             </div>
 
-            <div className="container p-5">
+            <div className="container p-2">
               <h1 className="text-center">Our team</h1>
               <br />
               <br />
@@ -67,7 +68,12 @@ class AboutUs extends Component {
                   github="https://github.com/arjunas14"
                   instagram="https://instagram.com/arjun_sharma1498"
                 />
-                <Card image={arjun} uname="Amandeep Singh" />
+                <Card
+                  image={amandeep}
+                  uname="Amandeep Singh"
+                  github="https://github.com/amansandhu2718"
+                  instagram="https://instagram.com/aman.sandhu_"
+                />
               </div>
             </div>
 
