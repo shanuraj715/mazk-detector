@@ -112,8 +112,30 @@ li a {
 li a:hover{
     color: rgb(218, 218, 218);
 }
+.aboutmin{
+   
+    display:grid;
+    place-items: center;
 
+}
+.aboutcontainer{
+    min-height: 70vh;
+    display:grid;
+    place-items: center;
+
+}
+.aboutcontent{
+font-size: 1.3em;
+text-align: justify;
+}
+.cardcontainer{
+    display:grid;
+    place-items: center;
+}
 @media screen and (max-width: 768px) {
+    .aboutcontent{
+font-size: 1em
+}
     .mainbtn{
     background-color:#2C3E50 !important;
     color: white !important;

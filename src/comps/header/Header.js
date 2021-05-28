@@ -35,9 +35,7 @@ export default class Header extends Component {
                   <li>
                     <Link to="/about">About Us</Link>
                   </li>
-                  <li>
-                    <Link to="/api">API</Link>
-                  </li>
+                
                 </ul>
               </div>
               <div className="burger " id="burger" onClick={this.slide} >
