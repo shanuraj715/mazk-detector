@@ -1,0 +1,47 @@
+
+
+.detect-mainsection{
+    display:flex;
+    text-align:center;
+    min-height: 84vh;
+    overflow: hidden;
+}
+
+.detect-center{
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detect-left{
+    min-width: 400px;
+    width: 40vw !important;
+    max-width: 600px;
+    /* background-color: green; */
+    display: inline-block;
+    min-height: 50vh;
+}
+
+.detect-right{
+    /* background-color: red; */
+    min-width: 400px;
+    width: 40vw !important;
+    max-width: 600px;
+    display: inline-block;
+    min-height: 50vh;
+}
+
+.user-video-elem{
+    min-width: 500px;
+    min-height: 300px;
+}
+
+.user-video{
+    
+}
+
+canvas{
+    aspect-ratio: 4/3;
+}

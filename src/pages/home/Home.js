@@ -3,6 +3,8 @@ import Header from "../../comps/header/Header";
 import Footer from "../../comps/footer/Footer";
 import Helmet from "react-helmet";
 import Mainbg from "../../assets/mainimg.svg";
+import conf from '../../config.json'
+import { Link } from 'react-router-dom'
 
 class Home extends Component {
 
@@ -15,7 +17,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Face Detector | Home</title>
+          <title>Home | {conf.APP_NAME}</title>
         </Helmet>
         <Header />
         <section>
@@ -28,9 +30,9 @@ class Home extends Component {
                     <span>Wear Your Mask </span>or
                   </h5>
                   <h5 className="secondheading"> Bear The Consequences</h5>
-                  <button type="button" className="btn mainbtn">
+                  <Link to="/detect" type="button" className="btn mainbtn">
                     Start Detecting
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="col col-12 col-lg-6 ">

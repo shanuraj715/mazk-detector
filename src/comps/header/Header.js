@@ -20,7 +20,7 @@ export default class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav>
+        <nav style={{'marginBottom': '5px'}}>
           <div className="container-fluid navbar">
             <div className="container navinner">
               <div className="logo">
