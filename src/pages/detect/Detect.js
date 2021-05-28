@@ -14,223 +14,83 @@ import * as knnClassifier from '@tensorflow-models/knn-classifier'
 
 
 
-import m1 from '../../images/m/1.jpg'
-import m2 from '../../images/m/2.jpg'
-import m3 from '../../images/m/3.jpg'
-import m4 from '../../images/m/4.jpg'
-import m5 from '../../images/m/5.jpg'
-import m6 from '../../images/m/6.jpg'
-import m7 from '../../images/m/7.jpg'
-import m8 from '../../images/m/8.jpg'
-import m9 from '../../images/m/9.jpg'
-import m10 from '../../images/m/10.jpg'
-import m11 from '../../images/m/11.jpg'
-import m12 from '../../images/m/12.jpg'
-import m13 from '../../images/m/13.jpg'
-import m14 from '../../images/m/14.jpg'
-import m15 from '../../images/m/15.jpg'
-import m16 from '../../images/m/16.jpg'
-import m17 from '../../images/m/17.jpg'
-import m18 from '../../images/m/18.jpg'
-import m19 from '../../images/m/19.jpg'
-import m20 from '../../images/m/20.jpg'
-import m21 from '../../images/m/21.jpg'
-import m22 from '../../images/m/22.jpg'
-import m23 from '../../images/m/23.jpg'
-import m24 from '../../images/m/24.jpg'
-import m25 from '../../images/m/25.jpg'
-import m26 from '../../images/m/26.jpg'
-import m27 from '../../images/m/27.jpg'
-import m28 from '../../images/m/28.jpg'
-import m29 from '../../images/m/29.jpg'
-import m30 from '../../images/m/30.jpg'
-import m31 from '../../images/m/31.jpg'
-import m32 from '../../images/m/32.jpg'
-import m33 from '../../images/m/33.jpg'
-import m34 from '../../images/m/34.jpg'
-import m35 from '../../images/m/35.jpg'
-import m36 from '../../images/m/36.jpg'
-import m37 from '../../images/m/37.jpg'
-import m38 from '../../images/m/38.jpg'
-import m39 from '../../images/m/39.jpg'
-import m40 from '../../images/m/40.jpg'
-import m41 from '../../images/m/41.jpg'
-import m42 from '../../images/m/42.jpg'
-import m43 from '../../images/m/43.jpg'
-import m44 from '../../images/m/44.jpg'
-import m45 from '../../images/m/45.jpg'
-import m46 from '../../images/m/46.jpg'
-import m47 from '../../images/m/47.jpg'
-import m48 from '../../images/m/48.jpg'
-import m49 from '../../images/m/49.jpg'
-import m50 from '../../images/m/50.jpg'
-import m51 from '../../images/m/51.jpg'
-import m52 from '../../images/m/52.jpg'
-import m53 from '../../images/m/53.jpg'
-import m54 from '../../images/m/54.jpg'
-import m55 from '../../images/m/55.jpg'
-import m56 from '../../images/m/56.jpg'
-import m57 from '../../images/m/57.jpg'
-import m58 from '../../images/m/58.jpg'
-import m59 from '../../images/m/59.jpg'
-import m60 from '../../images/m/60.jpg'
-import m61 from '../../images/m/61.jpg'
-import m62 from '../../images/m/62.jpg'
-import m63 from '../../images/m/63.jpg'
-import m64 from '../../images/m/64.jpg'
-import m65 from '../../images/m/65.jpg'
-import m66 from '../../images/m/66.jpg'
-import m67 from '../../images/m/67.jpg'
-import m68 from '../../images/m/68.jpg'
-import m69 from '../../images/m/69.jpg'
-import m70 from '../../images/m/70.jpg'
-import m71 from '../../images/m/71.jpg'
-import m72 from '../../images/m/72.jpg'
-import m73 from '../../images/m/73.jpg'
-import m74 from '../../images/m/74.jpg'
-import m75 from '../../images/m/75.jpg'
-import m76 from '../../images/m/76.jpg'
-import m77 from '../../images/m/77.jpg'
-import m78 from '../../images/m/78.jpg'
-import m79 from '../../images/m/79.jpg'
-import m80 from '../../images/m/80.jpg'
-import m81 from '../../images/m/81.jpg'
-import m82 from '../../images/m/82.jpg'
-import m83 from '../../images/m/83.jpg'
-import m84 from '../../images/m/84.jpg'
-import m85 from '../../images/m/85.jpg'
-import m86 from '../../images/m/86.jpg'
-import m87 from '../../images/m/87.jpg'
-import m88 from '../../images/m/88.jpg'
-import m89 from '../../images/m/89.jpg'
-import m90 from '../../images/m/90.jpg'
-import m91 from '../../images/m/91.jpg'
-import m92 from '../../images/m/92.jpg'
-import m93 from '../../images/m/93.jpg'
-import m94 from '../../images/m/94.jpg'
-import m95 from '../../images/m/95.jpg'
-import m96 from '../../images/m/96.jpg'
-import m97 from '../../images/m/97.jpg'
-import m98 from '../../images/m/98.jpg'
-import m99 from '../../images/m/99.jpg'
-import m100 from '../../images/m/100.jpg'
-import m101 from '../../images/m/101.jpg'
-import m102 from '../../images/m/102.jpg'
-import m103 from '../../images/m/103.jpg'
-import m104 from '../../images/m/104.jpg'
-import m105 from '../../images/m/105.jpg'
-import m106 from '../../images/m/106.jpg'
-import m107 from '../../images/m/107.jpg'
-import m108 from '../../images/m/108.jpg'
-import m109 from '../../images/m/109.jpg'
-import m110 from '../../images/m/110.jpg'
-import m111 from '../../images/m/111.jpg'
-import m112 from '../../images/m/112.jpg'
-import m113 from '../../images/m/113.jpg'
-import m114 from '../../images/m/114.jpg'
-import m115 from '../../images/m/115.jpg'
-import m116 from '../../images/m/116.jpg'
-import m117 from '../../images/m/117.jpg'
-import m118 from '../../images/m/118.jpg'
-import m119 from '../../images/m/119.jpg'
-import m120 from '../../images/m/120.jpg'
-import m121 from '../../images/m/121.jpg'
-import m122 from '../../images/m/122.jpg'
-import m123 from '../../images/m/123.jpg'
-import m124 from '../../images/m/124.jpg'
-import m125 from '../../images/m/125.jpg'
-import m126 from '../../images/m/126.jpg'
-import m127 from '../../images/m/127.jpg'
-import m128 from '../../images/m/128.jpg'
-import m129 from '../../images/m/129.jpg'
-import m130 from '../../images/m/130.jpg'
-import m131 from '../../images/m/131.jpg'
-import m132 from '../../images/m/132.jpg'
-import m133 from '../../images/m/133.jpg'
-import m134 from '../../images/m/134.jpg'
-import m135 from '../../images/m/135.jpg'
-import m136 from '../../images/m/136.jpg'
-import m137 from '../../images/m/137.jpg'
-import m138 from '../../images/m/138.jpg'
-import m139 from '../../images/m/139.jpg'
-import m140 from '../../images/m/140.jpg'
-import m141 from '../../images/m/141.jpg'
+import m1 from '../../images/m/1.jpg'; import m2 from '../../images/m/2.jpg'; import m3 from '../../images/m/3.jpg';
+import m4 from '../../images/m/4.jpg'; import m5 from '../../images/m/5.jpg'; import m6 from '../../images/m/6.jpg';
+import m7 from '../../images/m/7.jpg'; import m8 from '../../images/m/8.jpg'; import m9 from '../../images/m/9.jpg';
+import m10 from '../../images/m/10.jpg'; import m11 from '../../images/m/11.jpg'; import m12 from '../../images/m/12.jpg';
+import m13 from '../../images/m/13.jpg'; import m14 from '../../images/m/14.jpg'; import m15 from '../../images/m/15.jpg';
+import m16 from '../../images/m/16.jpg'; import m17 from '../../images/m/17.jpg'; import m18 from '../../images/m/18.jpg';
+import m19 from '../../images/m/19.jpg'; import m20 from '../../images/m/20.jpg'; import m21 from '../../images/m/21.jpg';
+import m22 from '../../images/m/22.jpg'; import m23 from '../../images/m/23.jpg'; import m24 from '../../images/m/24.jpg';
+import m25 from '../../images/m/25.jpg'; import m26 from '../../images/m/26.jpg'; import m27 from '../../images/m/27.jpg';
+import m28 from '../../images/m/28.jpg'; import m29 from '../../images/m/29.jpg'; import m30 from '../../images/m/30.jpg';
+import m31 from '../../images/m/31.jpg'; import m32 from '../../images/m/32.jpg'; import m33 from '../../images/m/33.jpg';
+import m34 from '../../images/m/34.jpg'; import m35 from '../../images/m/35.jpg'; import m36 from '../../images/m/36.jpg';
+import m37 from '../../images/m/37.jpg'; import m38 from '../../images/m/38.jpg'; import m39 from '../../images/m/39.jpg';
+import m40 from '../../images/m/40.jpg'; import m41 from '../../images/m/41.jpg'; import m42 from '../../images/m/42.jpg';
+import m43 from '../../images/m/43.jpg'; import m44 from '../../images/m/44.jpg'; import m45 from '../../images/m/45.jpg';
+import m46 from '../../images/m/46.jpg'; import m47 from '../../images/m/47.jpg'; import m48 from '../../images/m/48.jpg';
+import m49 from '../../images/m/49.jpg'; import m50 from '../../images/m/50.jpg'; import m51 from '../../images/m/51.jpg';
+import m52 from '../../images/m/52.jpg'; import m53 from '../../images/m/53.jpg'; import m54 from '../../images/m/54.jpg';
+import m55 from '../../images/m/55.jpg'; import m56 from '../../images/m/56.jpg'; import m57 from '../../images/m/57.jpg';
+import m58 from '../../images/m/58.jpg'; import m59 from '../../images/m/59.jpg'; import m60 from '../../images/m/60.jpg';
+import m61 from '../../images/m/61.jpg'; import m62 from '../../images/m/62.jpg'; import m63 from '../../images/m/63.jpg';
+import m64 from '../../images/m/64.jpg'; import m65 from '../../images/m/65.jpg'; import m66 from '../../images/m/66.jpg';
+import m67 from '../../images/m/67.jpg'; import m68 from '../../images/m/68.jpg'; import m69 from '../../images/m/69.jpg';
+import m70 from '../../images/m/70.jpg'; import m71 from '../../images/m/71.jpg'; import m72 from '../../images/m/72.jpg';
+import m73 from '../../images/m/73.jpg'; import m74 from '../../images/m/74.jpg'; import m75 from '../../images/m/75.jpg';
+import m76 from '../../images/m/76.jpg'; import m77 from '../../images/m/77.jpg'; import m78 from '../../images/m/78.jpg';
+import m79 from '../../images/m/79.jpg'; import m80 from '../../images/m/80.jpg'; import m81 from '../../images/m/81.jpg';
+import m82 from '../../images/m/82.jpg'; import m83 from '../../images/m/83.jpg'; import m84 from '../../images/m/84.jpg';
+import m85 from '../../images/m/85.jpg'; import m86 from '../../images/m/86.jpg'; import m87 from '../../images/m/87.jpg';
+import m88 from '../../images/m/88.jpg'; import m89 from '../../images/m/89.jpg'; import m90 from '../../images/m/90.jpg';
+import m91 from '../../images/m/91.jpg'; import m92 from '../../images/m/92.jpg'; import m93 from '../../images/m/93.jpg';
+import m94 from '../../images/m/94.jpg'; import m95 from '../../images/m/95.jpg'; import m96 from '../../images/m/96.jpg';
+import m97 from '../../images/m/97.jpg'; import m98 from '../../images/m/98.jpg'; import m99 from '../../images/m/99.jpg';
+import m100 from '../../images/m/100.jpg'; import m101 from '../../images/m/101.jpg'; import m102 from '../../images/m/102.jpg';
+import m103 from '../../images/m/103.jpg'; import m104 from '../../images/m/104.jpg'; import m105 from '../../images/m/105.jpg';
+import m106 from '../../images/m/106.jpg'; import m107 from '../../images/m/107.jpg'; import m108 from '../../images/m/108.jpg';
+import m109 from '../../images/m/109.jpg'; import m110 from '../../images/m/110.jpg'; import m111 from '../../images/m/111.jpg';
+import m112 from '../../images/m/112.jpg'; import m113 from '../../images/m/113.jpg'; import m114 from '../../images/m/114.jpg';
+import m115 from '../../images/m/115.jpg'; import m116 from '../../images/m/116.jpg'; import m117 from '../../images/m/117.jpg';
+import m118 from '../../images/m/118.jpg'; import m119 from '../../images/m/119.jpg'; import m120 from '../../images/m/120.jpg';
+import m121 from '../../images/m/121.jpg'; import m122 from '../../images/m/122.jpg'; import m123 from '../../images/m/123.jpg';
+import m124 from '../../images/m/124.jpg'; import m125 from '../../images/m/125.jpg'; import m126 from '../../images/m/126.jpg';
+import m127 from '../../images/m/127.jpg'; import m128 from '../../images/m/128.jpg'; import m129 from '../../images/m/129.jpg';
+import m130 from '../../images/m/130.jpg'; import m131 from '../../images/m/131.jpg'; import m132 from '../../images/m/132.jpg';
+import m133 from '../../images/m/133.jpg'; import m134 from '../../images/m/134.jpg'; import m135 from '../../images/m/135.jpg';
+import m136 from '../../images/m/136.jpg'; import m137 from '../../images/m/137.jpg'; import m138 from '../../images/m/138.jpg';
+import m139 from '../../images/m/139.jpg'; import m140 from '../../images/m/140.jpg'; import m141 from '../../images/m/141.jpg';
 
 
-import nm1 from '../../images/nm/1.jpg'
-import nm2 from '../../images/nm/2.jpg'
-import nm3 from '../../images/nm/3.jpg'
-import nm4 from '../../images/nm/4.jpg'
-import nm5 from '../../images/nm/5.jpg'
-import nm6 from '../../images/nm/6.jpg'
-import nm7 from '../../images/nm/7.jpg'
-import nm8 from '../../images/nm/8.jpg'
-import nm9 from '../../images/nm/9.jpg'
-import nm10 from '../../images/nm/10.jpg'
-import nm11 from '../../images/nm/11.jpg'
-import nm12 from '../../images/nm/12.jpg'
-import nm13 from '../../images/nm/13.jpg'
-import nm14 from '../../images/nm/14.jpg'
-import nm15 from '../../images/nm/15.jpg'
-import nm16 from '../../images/nm/16.jpg'
-import nm17 from '../../images/nm/17.jpg'
-import nm18 from '../../images/nm/18.jpg'
-import nm19 from '../../images/nm/19.jpg'
-import nm20 from '../../images/nm/20.jpg'
-import nm21 from '../../images/nm/21.jpg'
-import nm22 from '../../images/nm/22.jpg'
-import nm23 from '../../images/nm/23.jpg'
-import nm24 from '../../images/nm/24.jpg'
-import nm25 from '../../images/nm/25.jpg'
-import nm26 from '../../images/nm/26.jpg'
-import nm27 from '../../images/nm/27.jpg'
-import nm28 from '../../images/nm/28.jpg'
-import nm29 from '../../images/nm/29.jpg'
-import nm30 from '../../images/nm/30.jpg'
-import nm31 from '../../images/nm/31.jpg'
-import nm32 from '../../images/nm/32.jpg'
-import nm33 from '../../images/nm/33.jpg'
-import nm34 from '../../images/nm/34.jpg'
-import nm35 from '../../images/nm/35.jpg'
-import nm36 from '../../images/nm/36.jpg'
-import nm37 from '../../images/nm/37.jpg'
-import nm38 from '../../images/nm/38.jpg'
-import nm39 from '../../images/nm/39.jpg'
-import nm40 from '../../images/nm/40.jpg'
-import nm41 from '../../images/nm/41.jpg'
-import nm42 from '../../images/nm/42.jpg'
-import nm43 from '../../images/nm/43.jpg'
-import nm44 from '../../images/nm/44.jpg'
-import nm45 from '../../images/nm/45.jpg'
-import nm46 from '../../images/nm/46.jpg'
-import nm47 from '../../images/nm/47.jpg'
-import nm48 from '../../images/nm/48.jpg'
-import nm49 from '../../images/nm/49.jpg'
-import nm50 from '../../images/nm/50.jpg'
-import nm51 from '../../images/nm/51.jpg'
-import nm52 from '../../images/nm/52.jpg'
-import nm53 from '../../images/nm/53.jpg'
-import nm54 from '../../images/nm/54.jpg'
-import nm55 from '../../images/nm/55.jpg'
-import nm56 from '../../images/nm/56.jpg'
-import nm57 from '../../images/nm/57.jpg'
-import nm58 from '../../images/nm/58.jpg'
-import nm59 from '../../images/nm/59.jpg'
-import nm60 from '../../images/nm/60.jpg'
-import nm61 from '../../images/nm/61.jpg'
-import nm62 from '../../images/nm/62.jpg'
-import nm63 from '../../images/nm/63.jpg'
-import nm64 from '../../images/nm/64.jpg'
-import nm65 from '../../images/nm/65.jpg'
-import nm66 from '../../images/nm/66.jpg'
-import nm67 from '../../images/nm/67.jpg'
-import nm68 from '../../images/nm/68.jpg'
-import nm69 from '../../images/nm/69.jpg'
-import nm70 from '../../images/nm/70.jpg'
+import nm1 from '../../images/nm/1.jpg'; import nm2 from '../../images/nm/2.jpg'; import nm3 from '../../images/nm/3.jpg';
+import nm4 from '../../images/nm/4.jpg'; import nm5 from '../../images/nm/5.jpg'; import nm6 from '../../images/nm/6.jpg';
+import nm7 from '../../images/nm/7.jpg'; import nm8 from '../../images/nm/8.jpg'; import nm9 from '../../images/nm/9.jpg';
+import nm10 from '../../images/nm/10.jpg'; import nm11 from '../../images/nm/11.jpg'; import nm12 from '../../images/nm/12.jpg';
+import nm13 from '../../images/nm/13.jpg'; import nm14 from '../../images/nm/14.jpg'; import nm15 from '../../images/nm/15.jpg';
+import nm16 from '../../images/nm/16.jpg'; import nm17 from '../../images/nm/17.jpg'; import nm18 from '../../images/nm/18.jpg';
+import nm19 from '../../images/nm/19.jpg'; import nm20 from '../../images/nm/20.jpg'; import nm21 from '../../images/nm/21.jpg';
+import nm22 from '../../images/nm/22.jpg'; import nm23 from '../../images/nm/23.jpg'; import nm24 from '../../images/nm/24.jpg';
+import nm25 from '../../images/nm/25.jpg'; import nm26 from '../../images/nm/26.jpg'; import nm27 from '../../images/nm/27.jpg';
+import nm28 from '../../images/nm/28.jpg'; import nm29 from '../../images/nm/29.jpg'; import nm30 from '../../images/nm/30.jpg';
+import nm31 from '../../images/nm/31.jpg'; import nm32 from '../../images/nm/32.jpg'; import nm33 from '../../images/nm/33.jpg';
+import nm34 from '../../images/nm/34.jpg'; import nm35 from '../../images/nm/35.jpg'; import nm36 from '../../images/nm/36.jpg';
+import nm37 from '../../images/nm/37.jpg'; import nm38 from '../../images/nm/38.jpg'; import nm39 from '../../images/nm/39.jpg';
+import nm40 from '../../images/nm/40.jpg'; import nm41 from '../../images/nm/41.jpg'; import nm42 from '../../images/nm/42.jpg';
+import nm43 from '../../images/nm/43.jpg'; import nm44 from '../../images/nm/44.jpg'; import nm45 from '../../images/nm/45.jpg';
+import nm46 from '../../images/nm/46.jpg'; import nm47 from '../../images/nm/47.jpg'; import nm48 from '../../images/nm/48.jpg';
+import nm49 from '../../images/nm/49.jpg'; import nm50 from '../../images/nm/50.jpg'; import nm51 from '../../images/nm/51.jpg';
+import nm52 from '../../images/nm/52.jpg'; import nm53 from '../../images/nm/53.jpg'; import nm54 from '../../images/nm/54.jpg';
+import nm55 from '../../images/nm/55.jpg'; import nm56 from '../../images/nm/56.jpg'; import nm57 from '../../images/nm/57.jpg';
+import nm58 from '../../images/nm/58.jpg'; import nm59 from '../../images/nm/59.jpg'; import nm60 from '../../images/nm/60.jpg';
+import nm61 from '../../images/nm/61.jpg'; import nm62 from '../../images/nm/62.jpg'; import nm63 from '../../images/nm/63.jpg';
+import nm64 from '../../images/nm/64.jpg'; import nm65 from '../../images/nm/65.jpg'; import nm66 from '../../images/nm/66.jpg';
+import nm67 from '../../images/nm/67.jpg'; import nm68 from '../../images/nm/68.jpg'; import nm69 from '../../images/nm/69.jpg';
+import nm70 from '../../images/nm/70.jpg';
 
 
 
-// import userImage from '../../images/9.jpg'
+// import userImage from '../../images/9.jpg';
 
 window.mobilenetModule = ''
 window.classifier = ''
