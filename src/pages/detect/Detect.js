@@ -230,6 +230,7 @@ export default class Detect extends Component {
         return(
             <React.Fragment>
                 {/* { consoel.log( typeof window.)} */}
+                
                 <Helmet>
                     <title>Detect Mask | {conf.APP_NAME}</title>
                 </Helmet>
