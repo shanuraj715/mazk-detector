@@ -4,15 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    height: 100%;
-}
-body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}
 nav{
     position: fixed;
     top: 0;
@@ -97,7 +88,6 @@ align-items: center;
      position: fixed;
      bottom: 0;
      width: 100vw;
-     margin-top: auto;
 }
 .mainsection{
     min-height:89vh;
@@ -198,4 +188,18 @@ font-size: 1.4rem;
 
 .red{
     color: #d93025;
+}
+
+.scroll-gray-transparent::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+.scroll-gray-transparent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.scroll-gray-transparent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }

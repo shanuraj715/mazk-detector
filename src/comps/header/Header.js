@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import "./header.css";
 import Logo from "../../assets/mask2.png";
 import {Link} from "react-router-dom";
+
+
 export default class Header extends Component {
 
 
@@ -12,10 +14,6 @@ export default class Header extends Component {
    
      slider.classList.toggle("slideropen");
      document.body.classList.toggle("hiddenoverflow")
-  
- 
-   
-
 }
 
   render() {
@@ -35,6 +33,9 @@ export default class Header extends Component {
                   <li>
                     <Link to="/about">About Us</Link>
                   </li>
+                  <li>
+                    <Link to="/how-to-use">How To Use</Link>
+                  </li>
                 </ul>
               </div>
               <div className="burger " id="burger" onClick={this.slide}>
@@ -49,8 +50,7 @@ export default class Header extends Component {
         </nav>
         <div
           id="slider"
-          className="slider d-flex justify-content-center align-items-center flex-direction-row"
-        >
+          className="slider d-flex justify-content-center align-items-center flex-direction-row">
           <div className="bgg"></div>
 
           <ul className="sliderul">
@@ -59,6 +59,9 @@ export default class Header extends Component {
             </li>
             <li>
               <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/how-to-use">How To Use</Link>
             </li>
           </ul>
         </div>

@@ -47,20 +47,20 @@ import m88 from '../../images/m/88.jpg'; import m89 from '../../images/m/89.jpg'
 import m91 from '../../images/m/91.jpg'; import m92 from '../../images/m/92.jpg'; import m93 from '../../images/m/93.jpg';
 import m94 from '../../images/m/94.jpg'; import m95 from '../../images/m/95.jpg'; import m96 from '../../images/m/96.jpg';
 import m97 from '../../images/m/97.jpg'; import m98 from '../../images/m/98.jpg'; import m99 from '../../images/m/99.jpg';
-import m100 from '../../images/m/100.jpg'; import m101 from '../../images/m/101.jpg'; import m102 from '../../images/m/102.jpg';
-import m103 from '../../images/m/103.jpg'; import m104 from '../../images/m/104.jpg'; import m105 from '../../images/m/105.jpg';
-import m106 from '../../images/m/106.jpg'; import m107 from '../../images/m/107.jpg'; import m108 from '../../images/m/108.jpg';
-import m109 from '../../images/m/109.jpg'; import m110 from '../../images/m/110.jpg'; import m111 from '../../images/m/111.jpg';
-import m112 from '../../images/m/112.jpg'; import m113 from '../../images/m/113.jpg'; import m114 from '../../images/m/114.jpg';
-import m115 from '../../images/m/115.jpg'; import m116 from '../../images/m/116.jpg'; import m117 from '../../images/m/117.jpg';
-import m118 from '../../images/m/118.jpg'; import m119 from '../../images/m/119.jpg'; import m120 from '../../images/m/120.jpg';
-import m121 from '../../images/m/121.jpg'; import m122 from '../../images/m/122.jpg'; import m123 from '../../images/m/123.jpg';
-import m124 from '../../images/m/124.jpg'; import m125 from '../../images/m/125.jpg'; import m126 from '../../images/m/126.jpg';
-import m127 from '../../images/m/127.jpg'; import m128 from '../../images/m/128.jpg'; import m129 from '../../images/m/129.jpg';
-import m130 from '../../images/m/130.jpg'; import m131 from '../../images/m/131.jpg'; import m132 from '../../images/m/132.jpg';
-import m133 from '../../images/m/133.jpg'; import m134 from '../../images/m/134.jpg'; import m135 from '../../images/m/135.jpg';
-import m136 from '../../images/m/136.jpg'; import m137 from '../../images/m/137.jpg'; import m138 from '../../images/m/138.jpg';
-import m139 from '../../images/m/139.jpg'; import m140 from '../../images/m/140.jpg'; import m141 from '../../images/m/141.jpg';
+// import m100 from '../../images/m/100.jpg'; import m101 from '../../images/m/101.jpg'; import m102 from '../../images/m/102.jpg';
+// import m103 from '../../images/m/103.jpg'; import m104 from '../../images/m/104.jpg'; import m105 from '../../images/m/105.jpg';
+// import m106 from '../../images/m/106.jpg'; import m107 from '../../images/m/107.jpg'; import m108 from '../../images/m/108.jpg';
+// import m109 from '../../images/m/109.jpg'; import m110 from '../../images/m/110.jpg'; import m111 from '../../images/m/111.jpg';
+// import m112 from '../../images/m/112.jpg'; import m113 from '../../images/m/113.jpg'; import m114 from '../../images/m/114.jpg';
+// import m115 from '../../images/m/115.jpg'; import m116 from '../../images/m/116.jpg'; import m117 from '../../images/m/117.jpg';
+// import m118 from '../../images/m/118.jpg'; import m119 from '../../images/m/119.jpg'; import m120 from '../../images/m/120.jpg';
+// import m121 from '../../images/m/121.jpg'; import m122 from '../../images/m/122.jpg'; import m123 from '../../images/m/123.jpg';
+// import m124 from '../../images/m/124.jpg'; import m125 from '../../images/m/125.jpg'; import m126 from '../../images/m/126.jpg';
+// import m127 from '../../images/m/127.jpg'; import m128 from '../../images/m/128.jpg'; import m129 from '../../images/m/129.jpg';
+// import m130 from '../../images/m/130.jpg'; import m131 from '../../images/m/131.jpg'; import m132 from '../../images/m/132.jpg';
+// import m133 from '../../images/m/133.jpg'; import m134 from '../../images/m/134.jpg'; import m135 from '../../images/m/135.jpg';
+// import m136 from '../../images/m/136.jpg'; import m137 from '../../images/m/137.jpg'; import m138 from '../../images/m/138.jpg';
+// import m139 from '../../images/m/139.jpg'; import m140 from '../../images/m/140.jpg'; import m141 from '../../images/m/141.jpg';
 
 
 import nm1 from '../../images/nm/1.jpg'; import nm2 from '../../images/nm/2.jpg'; import nm3 from '../../images/nm/3.jpg';
@@ -98,17 +98,20 @@ window.classifier = ''
 export default class Detect extends Component {
 
     async componentDidMount(){
-
-        // Load mobilenet module
-        window.mobilenetModule = await mobilenet.load({version: 2, alpha: 1});
-        // Add examples to the KNN Classifier
-        window.classifier = await this.trainClassifier(window.mobilenetModule);
-        if(window.classifier !== '' && typeof window.classifier === 'object'){
-            this.setState({ isLearning: false })
-            this.enableVideo()
+        try{
+            
+            // Load mobilenet module
+            window.mobilenetModule = await mobilenet.load({version: 2, alpha: 1});
+            // Add examples to the KNN Classifier
+            window.classifier = await this.trainClassifier(window.mobilenetModule);
+            if(window.classifier !== '' && typeof window.classifier === 'object'){
+                this.setState({ isLearning: false })
+                this.enableVideo()
+            }
         }
-        
-        console.log( typeof window.classifier, window.classifier )
+        catch( err ){
+            console.log("Unable to train the model")
+        }
     }
 
     componentWillUnmount(){
@@ -119,17 +122,21 @@ export default class Detect extends Component {
 
 
     start = async () => {
+        if( typeof window.classifier === 'object' && window.mobilenetModule !== '' ){
+            // Predict class for the test image
+            const testImage = document.getElementById('test-img');
+            const tfTestImage = tf.browser.fromPixels(testImage);
+            const logits = window.mobilenetModule.infer(tfTestImage, 'conv_preds');
+            const prediction = await window.classifier.predictClass(logits);
 
-        // Predict class for the test image
-        const testImage = document.getElementById('test-img');
-        const tfTestImage = tf.browser.fromPixels(testImage);
-        const logits = window.mobilenetModule.infer(tfTestImage, 'conv_preds');
-        const prediction = await window.classifier.predictClass(logits);
-
-        if (prediction.label == 1) { // no mask - red border
-            console.log("False")
-        } else { // has mask - green border
-            console.log("True")
+            if ( prediction.label === 1 || prediction.label === '1' ) { // no mask - red border
+                console.log("False")
+            } else { // has mask - green border
+                console.log("True")
+            }
+        }
+        else{
+            console.log("Trained model not ready")
         }
     }
 
@@ -156,7 +163,6 @@ export default class Detect extends Component {
             const logits = mobilenetModule.infer(tfImg, 'conv_preds');
             classifier.addExample(logits, 1); // no mask
         });
-        console.log( classifier )
         return classifier;
     }
 
@@ -169,7 +175,7 @@ export default class Detect extends Component {
         // let img = canvas.toDataURL('image/jpg')
         setTimeout( () =>{
             this.start()
-        }, 280)
+        }, 200)
     }
 
     captureVideo = () => {
@@ -183,19 +189,14 @@ export default class Detect extends Component {
 
     enableVideo = async () => {
         let vid = document.getElementById("user-video")
-        const constraints = {
-            audio: false,
-            video: true
-        }
         try{
-            const stream = await navigator.mediaDevices.getUserMedia( constraints )
+            const stream = await navigator.mediaDevices.getUserMedia( { audio: false, video: true } )
             window.stream = stream
-            console.log( window.stream )
             vid.srcObject = stream
             vid.play()
         }
         catch( e ){
-            
+
         }
     }
 
@@ -206,17 +207,17 @@ export default class Detect extends Component {
             });
         }
         catch( err ){
-            console.log( err )
+            console.log( "Unable to stop the camera." )
         }
     }
 
     render() {
         return(
             <React.Fragment>
-                
                 <Helmet>
                     <title>Detect Mask | {conf.APP_NAME}</title>
                 </Helmet>
+                {this.state.isLearning ? <Loading /> : null}
                 <Header />
                 <div className="train-images" style={{'display': 'none'}}>
                     <img src={ m1 } className="mask-img" alt="" />
@@ -318,7 +319,7 @@ export default class Detect extends Component {
                     <img src={ m97 } className="mask-img" alt="" />
                     <img src={ m98 } className="mask-img" alt="" />
                     <img src={ m99 } className="mask-img" alt="" />
-                    <img src={ m100 } className="mask-img" alt="" />
+                    {/* <img src={ m100 } className="mask-img" alt="" />
                     <img src={ m101 } className="mask-img" alt="" />
                     <img src={ m102 } className="mask-img" alt="" />
                     <img src={ m103 } className="mask-img" alt="" />
@@ -359,7 +360,7 @@ export default class Detect extends Component {
                     <img src={ m138 } className="mask-img" alt="" />
                     <img src={ m139 } className="mask-img" alt="" />
                     <img src={ m140 } className="mask-img" alt="" />
-                    <img src={ m141 } className="mask-img" alt="" />
+                    <img src={ m141 } className="mask-img" alt="" /> */}
 
                     
                     <img src={ nm1 } className="no-mask-img" alt="" />
@@ -435,14 +436,14 @@ export default class Detect extends Component {
 
 
                 </div>
-                <a id="downloadAnchorElem"></a>
-                <img id="test-img" crossOrigin="anonymous" src=""  style={{'display': 'none'}} />
+                
+                <img id="test-img" crossOrigin="anonymous" src=""  style={{'display': 'none'}} alt="" />
                 <section>
                     <div className="container mainsection">
                         <div className="row">
                             <div className="col col-12 col-lg-6" style={{'display': 'grid', 'placeItems': 'center'}}>
                                 
-                                <video src='' className="w-100" id="user-video" controls={ true } autoPlay={ false } />
+                                <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } />
                                 <button type="button" className="btn mainbtn mt-2" onClick={ this.captureVideo }>
                                     Capture Image
                                 </button>
@@ -456,10 +457,9 @@ export default class Detect extends Component {
                             </div>
                         </div>
                     </div>
-                <img src="" id="test" />
+                <img src="" id="test" alt="" />
                 </section>
             <Footer />
-            {this.state.isLearning ? <Loading /> : null}
           </React.Fragment>
         );
     }
