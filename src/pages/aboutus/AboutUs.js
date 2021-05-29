@@ -20,7 +20,7 @@ class AboutUs extends Component {
             <Header />
             <div className="container pt-5 aboutcontainer">
               <div className="row aboutmin">
-                <div className="col col-12 col-md-12 col-lg-6">
+                <div className="col col-12 col-md-12 col-lg-6 pt-4">
                   <img
                     src={aboutimg}
                     className="img-fluid my-auto"
@@ -28,7 +28,7 @@ class AboutUs extends Component {
                   ></img>
                 </div>
                 <div className="col col-12 col-md-12 col-lg-6 text-center">
-                  <h1> About us</h1>
+                  <h1 className="mainheading"> About us</h1>
                   <p className="aboutcontent">
                     Mazk is an online mask detecting web app that can be used to
                     detect face mask. This web app can be attached with any
@@ -44,9 +44,9 @@ class AboutUs extends Component {
                 </div>
               </div>
             </div>
- 
+
             <div className="container p-2">
-              <h1 className="text-center">Our team</h1>
+              <h1 className="text-center mainheading">Our team</h1>
               <br />
               <br />
               <div className="row pb-5">
