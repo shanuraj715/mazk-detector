@@ -6,7 +6,6 @@ export default class Footer extends Component {
             <div className="footer">
               <p className="my-auto">Made With love <i className="fas fa-heart red"></i></p>
             </div>
-       
         );
     }
 }

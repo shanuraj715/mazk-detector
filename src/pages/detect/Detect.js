@@ -12,6 +12,7 @@ import * as mobilenet from '@tensorflow-models/mobilenet'
 import * as knnClassifier from '@tensorflow-models/knn-classifier'
 
 
+import ReactTooltip from 'react-tooltip'
 
 
 import m1 from '../../images/m/1.jpg'; import m2 from '../../images/m/2.jpg'; import m3 from '../../images/m/3.jpg';
@@ -168,8 +169,6 @@ export default class Detect extends Component {
 
     fillImage = () => {
         let canvas = document.getElementById('canvas')
-        
-
         const testImage = document.getElementById('test-img');
         testImage.src = canvas.toDataURL('image/jpg')
         // let img = canvas.toDataURL('image/jpg')
@@ -181,22 +180,28 @@ export default class Detect extends Component {
     captureVideo = () => {
         var canvas = document.getElementById('canvas');
         var video = document.getElementById('user-video');
-        
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-
         this.fillImage()
     }
 
     enableVideo = async () => {
-        let vid = document.getElementById("user-video")
-        try{
-            const stream = await navigator.mediaDevices.getUserMedia( { audio: false, video: true } )
-            window.stream = stream
-            vid.srcObject = stream
-            vid.play()
+        const constraints = {
+            audio: false,
+            video: true
         }
-        catch( e ){
-
+        let vid = document.getElementById("user-video")
+        const stream = await navigator.mediaDevices.getUserMedia( constraints )
+        console.log( stream )
+        window.stream = stream
+        vid.srcObject = stream
+        vid.play()
+        if( typeof stream === 'object' ){
+            this.setState({ isCameraAccessed: true }, () => {
+                
+            })
+        }
+        else{
+            this.setState({ isCameraAccessed: false })
         }
     }
 
@@ -442,8 +447,15 @@ export default class Detect extends Component {
                     <div className="container mainsection">
                         <div className="row">
                             <div className="col col-12 col-lg-6" style={{'display': 'grid', 'placeItems': 'center'}}>
-                                
-                                <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } />
+                                <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } style={{'display': this.state.isCameraAccess ? "initial" : 'none'}} />
+                                { !this.state.isCameraAccess ? 
+                                    <div className="no-cam-cont">
+                                        <p data-tip data-for="err-camera">Unable to start the camera</p>
+                                        <ReactTooltip place="right" id="err-camera" type="error" place="bottom">
+                                            Browser is unable to access the camera.<br />Please check your device cemera and reload the page.
+                                        </ReactTooltip>
+                                    </div> : null
+                                    }
                                 <button type="button" className="btn mainbtn mt-2" onClick={ this.captureVideo }>
                                     Capture Image
                                 </button>

@@ -8,11 +8,8 @@ export default class Header extends Component {
 
 
   slide = () => {
- 
-
-   const slider = document.getElementById("slider");
-   
-     slider.classList.toggle("slideropen");
+   document.getElementById("slider").classList.toggle("slideropen");
+    //  slider.classList.toggle("slideropen");
      document.body.classList.toggle("hiddenoverflow")
 }
 
@@ -23,7 +20,9 @@ export default class Header extends Component {
           <div className="container-fluid navbar">
             <div className="container navinner">
               <div className="logo">
-                <img src={Logo} className="logoimg" alt=""></img>
+                <Link to="/">
+                  <img src={Logo} className="logoimg" alt=""></img>
+                </Link>
               </div>
               <div className="list">
                 <ul className="navlinks my-auto">
@@ -34,7 +33,9 @@ export default class Header extends Component {
                     <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/how-to-use">How To Use</Link>
+                    <Link to="/how-to-use">
+                      How To Use
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -61,7 +62,9 @@ export default class Header extends Component {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="/how-to-use">How To Use</Link>
+              <Link to="/how-to-use">
+                How To Use
+              </Link>
             </li>
           </ul>
         </div>

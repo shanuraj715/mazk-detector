@@ -26,8 +26,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-text-decoration: none;
-list-style-type: none;    
+    text-decoration: none;
+    list-style-type: none;    
     flex-direction: row;
     color: white;
 }
