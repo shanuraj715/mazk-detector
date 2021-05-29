@@ -239,11 +239,11 @@ export default class Detect extends Component {
                 <Header />
                 <div className="train-images" style={{'display': 'none'}}>
                     <img src={ m1 } className="mask-img" alt="" />
-                    <img src={ m2 } className="mask-img" alt="" />
+                    {/* <img src={ m2 } className="mask-img" alt="" />
                     <img src={ m3 } className="mask-img" alt="" />
                     <img src={ m4 } className="mask-img" alt="" />
-                    <img src={ m5 } className="mask-img" alt="" />
-                    <img src={ m6 } className="mask-img" alt="" />
+                    <img src={ m5 } className="mask-img" alt="" /> */}
+                    {/* <img src={ m6 } className="mask-img" alt="" />
                     <img src={ m7 } className="mask-img" alt="" />
                     <img src={ m8 } className="mask-img" alt="" />
                     <img src={ m9 } className="mask-img" alt="" />
@@ -378,15 +378,15 @@ export default class Detect extends Component {
                     <img src={ m138 } className="mask-img" alt="" />
                     <img src={ m139 } className="mask-img" alt="" />
                     <img src={ m140 } className="mask-img" alt="" />
-                    <img src={ m141 } className="mask-img" alt="" />
+                    <img src={ m141 } className="mask-img" alt="" /> */}
 
                     
                     <img src={ nm1 } className="no-mask-img" alt="" />
-                    <img src={ nm2 } className="no-mask-img" alt="" />
+                    {/* <img src={ nm2 } className="no-mask-img" alt="" />
                     <img src={ nm3 } className="no-mask-img" alt="" />
                     <img src={ nm4 } className="no-mask-img" alt="" />
-                    <img src={ nm5 } className="no-mask-img" alt="" />
-                    <img src={ nm6 } className="no-mask-img" alt="" />
+                    <img src={ nm5 } className="no-mask-img" alt="" /> */}
+                    {/* <img src={ nm6 } className="no-mask-img" alt="" />
                     <img src={ nm7 } className="no-mask-img" alt="" />
                     <img src={ nm8 } className="no-mask-img" alt="" />
                     <img src={ nm9 } className="no-mask-img" alt="" />
@@ -480,7 +480,7 @@ export default class Detect extends Component {
                     <img src={ nm97 } className="no-mask-img" alt="" />
                     <img src={ nm98 } className="no-mask-img" alt="" />
                     <img src={ nm99 } className="no-mask-img" alt="" />
-                    <img src={ nm100 } className="no-mask-img" alt="" />
+                    <img src={ nm100 } className="no-mask-img" alt="" /> */}
 
 
                 </div>

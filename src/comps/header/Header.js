@@ -9,8 +9,6 @@ export default class Header extends Component {
 
   slide = () => {
    document.getElementById("slider").classList.toggle("slideropen");
-    //  slider.classList.toggle("slideropen");
-     document.body.classList.toggle("hiddenoverflow")
 }
 
   render() {
