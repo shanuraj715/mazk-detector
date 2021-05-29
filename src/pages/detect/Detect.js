@@ -45,20 +45,20 @@ import m88 from '../../images/m/88.jpg'; import m89 from '../../images/m/89.jpg'
 import m91 from '../../images/m/91.jpg'; import m92 from '../../images/m/92.jpg'; import m93 from '../../images/m/93.jpg';
 import m94 from '../../images/m/94.jpg'; import m95 from '../../images/m/95.jpg'; import m96 from '../../images/m/96.jpg';
 import m97 from '../../images/m/97.jpg'; import m98 from '../../images/m/98.jpg'; import m99 from '../../images/m/99.jpg';
-// import m100 from '../../images/m/100.jpg'; import m101 from '../../images/m/101.jpg'; import m102 from '../../images/m/102.jpg';
-// import m103 from '../../images/m/103.jpg'; import m104 from '../../images/m/104.jpg'; import m105 from '../../images/m/105.jpg';
-// import m106 from '../../images/m/106.jpg'; import m107 from '../../images/m/107.jpg'; import m108 from '../../images/m/108.jpg';
-// import m109 from '../../images/m/109.jpg'; import m110 from '../../images/m/110.jpg'; import m111 from '../../images/m/111.jpg';
-// import m112 from '../../images/m/112.jpg'; import m113 from '../../images/m/113.jpg'; import m114 from '../../images/m/114.jpg';
-// import m115 from '../../images/m/115.jpg'; import m116 from '../../images/m/116.jpg'; import m117 from '../../images/m/117.jpg';
-// import m118 from '../../images/m/118.jpg'; import m119 from '../../images/m/119.jpg'; import m120 from '../../images/m/120.jpg';
-// import m121 from '../../images/m/121.jpg'; import m122 from '../../images/m/122.jpg'; import m123 from '../../images/m/123.jpg';
-// import m124 from '../../images/m/124.jpg'; import m125 from '../../images/m/125.jpg'; import m126 from '../../images/m/126.jpg';
-// import m127 from '../../images/m/127.jpg'; import m128 from '../../images/m/128.jpg'; import m129 from '../../images/m/129.jpg';
-// import m130 from '../../images/m/130.jpg'; import m131 from '../../images/m/131.jpg'; import m132 from '../../images/m/132.jpg';
-// import m133 from '../../images/m/133.jpg'; import m134 from '../../images/m/134.jpg'; import m135 from '../../images/m/135.jpg';
-// import m136 from '../../images/m/136.jpg'; import m137 from '../../images/m/137.jpg'; import m138 from '../../images/m/138.jpg';
-// import m139 from '../../images/m/139.jpg'; import m140 from '../../images/m/140.jpg'; import m141 from '../../images/m/141.jpg';
+import m100 from '../../images/m/100.jpg'; import m101 from '../../images/m/101.jpg'; import m102 from '../../images/m/102.jpg';
+import m103 from '../../images/m/103.jpg'; import m104 from '../../images/m/104.jpg'; import m105 from '../../images/m/105.jpg';
+import m106 from '../../images/m/106.jpg'; import m107 from '../../images/m/107.jpg'; import m108 from '../../images/m/108.jpg';
+import m109 from '../../images/m/109.jpg'; import m110 from '../../images/m/110.jpg'; import m111 from '../../images/m/111.jpg';
+import m112 from '../../images/m/112.jpg'; import m113 from '../../images/m/113.jpg'; import m114 from '../../images/m/114.jpg';
+import m115 from '../../images/m/115.jpg'; import m116 from '../../images/m/116.jpg'; import m117 from '../../images/m/117.jpg';
+import m118 from '../../images/m/118.jpg'; import m119 from '../../images/m/119.jpg'; import m120 from '../../images/m/120.jpg';
+import m121 from '../../images/m/121.jpg'; import m122 from '../../images/m/122.jpg'; import m123 from '../../images/m/123.jpg';
+import m124 from '../../images/m/124.jpg'; import m125 from '../../images/m/125.jpg'; import m126 from '../../images/m/126.jpg';
+import m127 from '../../images/m/127.jpg'; import m128 from '../../images/m/128.jpg'; import m129 from '../../images/m/129.jpg';
+import m130 from '../../images/m/130.jpg'; import m131 from '../../images/m/131.jpg'; import m132 from '../../images/m/132.jpg';
+import m133 from '../../images/m/133.jpg'; import m134 from '../../images/m/134.jpg'; import m135 from '../../images/m/135.jpg';
+import m136 from '../../images/m/136.jpg'; import m137 from '../../images/m/137.jpg'; import m138 from '../../images/m/138.jpg';
+import m139 from '../../images/m/139.jpg'; import m140 from '../../images/m/140.jpg'; import m141 from '../../images/m/141.jpg';
 
 
 import nm1 from '../../images/nm/1.jpg'; import nm2 from '../../images/nm/2.jpg'; import nm3 from '../../images/nm/3.jpg';
@@ -84,9 +84,17 @@ import nm58 from '../../images/nm/58.jpg'; import nm59 from '../../images/nm/59.
 import nm61 from '../../images/nm/61.jpg'; import nm62 from '../../images/nm/62.jpg'; import nm63 from '../../images/nm/63.jpg';
 import nm64 from '../../images/nm/64.jpg'; import nm65 from '../../images/nm/65.jpg'; import nm66 from '../../images/nm/66.jpg';
 import nm67 from '../../images/nm/67.jpg'; import nm68 from '../../images/nm/68.jpg'; import nm69 from '../../images/nm/69.jpg';
-import nm70 from '../../images/nm/70.jpg';
-
-
+import nm70 from '../../images/nm/70.jpg'; import nm71 from '../../images/nm/71.jpg'; import nm72 from '../../images/nm/72.jpg';
+import nm73 from '../../images/nm/73.jpg'; import nm74 from '../../images/nm/74.jpg'; import nm75 from '../../images/nm/75.jpg';
+import nm76 from '../../images/nm/76.jpg'; import nm77 from '../../images/nm/77.jpg'; import nm78 from '../../images/nm/78.jpg';
+import nm79 from '../../images/nm/79.jpg'; import nm80 from '../../images/nm/80.jpg'; import nm81 from '../../images/nm/81.jpg';
+import nm82 from '../../images/nm/82.jpg'; import nm83 from '../../images/nm/83.jpg'; import nm84 from '../../images/nm/84.jpg';
+import nm85 from '../../images/nm/85.jpg'; import nm86 from '../../images/nm/86.jpg'; import nm87 from '../../images/nm/87.jpg';
+import nm88 from '../../images/nm/88.jpg'; import nm89 from '../../images/nm/89.jpg'; import nm90 from '../../images/nm/90.jpg';
+import nm91 from '../../images/nm/91.jpg'; import nm92 from '../../images/nm/92.jpg'; import nm93 from '../../images/nm/93.jpg';
+import nm94 from '../../images/nm/94.jpg'; import nm95 from '../../images/nm/95.jpg'; import nm96 from '../../images/nm/96.jpg';
+import nm97 from '../../images/nm/97.jpg'; import nm98 from '../../images/nm/98.jpg'; import nm99 from '../../images/nm/99.jpg';
+import nm100 from '../../images/nm/100.jpg';
 
 // import userImage from '../../images/9.jpg';
 
@@ -127,12 +135,18 @@ export default class Detect extends Component {
             const logits = window.mobilenetModule.infer(tfTestImage, 'conv_preds');
             const prediction = await window.classifier.predictClass(logits);
 
-            if ( prediction.label === 1 || prediction.label === '1' ) { // no mask - red border
+            if ( prediction.label === 1 || prediction.label === '1' ) { // no mask
                 this.setState({ masked: false })
                 console.log("False")
+                if( this.state.autoCapture ){  
+                    this.captureVideo()
+                }
             } else { // has mask - green border
                 this.setState({ masked: true })
                 console.log("True")
+                if( this.state.autoCapture ){  
+                    this.captureVideo()
+                }
             }
         }
         else{
@@ -142,7 +156,8 @@ export default class Detect extends Component {
 
     state = {
         isLearning: true,
-        masked: null
+        masked: null,
+        autoCapture: false
     }
 
     trainClassifier = async (mobilenetModule) => {
@@ -177,6 +192,7 @@ export default class Detect extends Component {
     }
 
     captureVideo = () => {
+        console.log("Capturing")
         var canvas = document.getElementById('canvas');
         var video = document.getElementById('user-video');
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -204,6 +220,13 @@ export default class Detect extends Component {
         catch( err ){
             console.log( "Unable to stop the camera." )
         }
+    }
+
+    autoCapture = ( bool ) => {
+        console.log( bool )
+        this.setState({ autoCapture: bool }, () => {
+            this.captureVideo()
+        })
     }
 
     render() {
@@ -314,7 +337,7 @@ export default class Detect extends Component {
                     <img src={ m97 } className="mask-img" alt="" />
                     <img src={ m98 } className="mask-img" alt="" />
                     <img src={ m99 } className="mask-img" alt="" />
-                    {/* <img src={ m100 } className="mask-img" alt="" />
+                    <img src={ m100 } className="mask-img" alt="" />
                     <img src={ m101 } className="mask-img" alt="" />
                     <img src={ m102 } className="mask-img" alt="" />
                     <img src={ m103 } className="mask-img" alt="" />
@@ -355,7 +378,7 @@ export default class Detect extends Component {
                     <img src={ m138 } className="mask-img" alt="" />
                     <img src={ m139 } className="mask-img" alt="" />
                     <img src={ m140 } className="mask-img" alt="" />
-                    <img src={ m141 } className="mask-img" alt="" /> */}
+                    <img src={ m141 } className="mask-img" alt="" />
 
                     
                     <img src={ nm1 } className="no-mask-img" alt="" />
@@ -428,6 +451,36 @@ export default class Detect extends Component {
                     <img src={ nm68 } className="no-mask-img" alt="" />
                     <img src={ nm69 } className="no-mask-img" alt="" />
                     <img src={ nm70 } className="no-mask-img" alt="" />
+                    <img src={ nm71 } className="no-mask-img" alt="" />
+                    <img src={ nm72 } className="no-mask-img" alt="" />
+                    <img src={ nm73 } className="no-mask-img" alt="" />
+                    <img src={ nm74 } className="no-mask-img" alt="" />
+                    <img src={ nm75 } className="no-mask-img" alt="" />
+                    <img src={ nm76 } className="no-mask-img" alt="" />
+                    <img src={ nm77 } className="no-mask-img" alt="" />
+                    <img src={ nm78 } className="no-mask-img" alt="" />
+                    <img src={ nm79 } className="no-mask-img" alt="" />
+                    <img src={ nm80 } className="no-mask-img" alt="" />
+                    <img src={ nm81 } className="no-mask-img" alt="" />
+                    <img src={ nm82 } className="no-mask-img" alt="" />
+                    <img src={ nm83 } className="no-mask-img" alt="" />
+                    <img src={ nm84 } className="no-mask-img" alt="" />
+                    <img src={ nm85 } className="no-mask-img" alt="" />
+                    <img src={ nm86 } className="no-mask-img" alt="" />
+                    <img src={ nm87 } className="no-mask-img" alt="" />
+                    <img src={ nm88 } className="no-mask-img" alt="" />
+                    <img src={ nm89 } className="no-mask-img" alt="" />
+                    <img src={ nm90 } className="no-mask-img" alt="" />
+                    <img src={ nm91 } className="no-mask-img" alt="" />
+                    <img src={ nm92 } className="no-mask-img" alt="" />
+                    <img src={ nm93 } className="no-mask-img" alt="" />
+                    <img src={ nm94 } className="no-mask-img" alt="" />
+                    <img src={ nm95 } className="no-mask-img" alt="" />
+                    <img src={ nm96 } className="no-mask-img" alt="" />
+                    <img src={ nm97 } className="no-mask-img" alt="" />
+                    <img src={ nm98 } className="no-mask-img" alt="" />
+                    <img src={ nm99 } className="no-mask-img" alt="" />
+                    <img src={ nm100 } className="no-mask-img" alt="" />
 
 
                 </div>
@@ -438,9 +491,22 @@ export default class Detect extends Component {
                         <div className="row">
                             <div className="col col-12 col-lg-6" style={{'display': 'grid', 'placeItems': 'center'}}>
                                 <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } />
-                                <button type="button" className="btn mainbtn mt-2" onClick={ this.captureVideo }>
-                                    Capture Image
-                                </button>
+                                <div style={{'display': 'flex', 'justifyContent': 'space-evenly', 'flexWrap': 'nowrap', 'alignItems': 'center'}}>
+                                    <button type="button" className="btn mainbtn mt-2 mx-1" onClick={ this.captureVideo }>
+                                        Capture Image
+                                    </button>
+                                    { !this.state.autoCapture ? 
+                                        <button type="button" className="btn mainbtn mt-2 mx-1" onClick={ () => this.autoCapture( true ) }>
+                                            Auto Capture
+                                        </button>
+                                        : 
+                                        <button type="button" className="btn mainbtn mt-2 mx-1" onClick={ () => this.autoCapture( false ) }>
+                                            Stop Auto Cap
+                                        </button>
+                                    }
+                                    
+                                </div>
+                                
                                 <br />
                             </div>
 
