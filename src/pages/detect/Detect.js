@@ -96,10 +96,6 @@ import nm94 from '../../images/nm/94.jpg'; import nm95 from '../../images/nm/95.
 import nm97 from '../../images/nm/97.jpg'; import nm98 from '../../images/nm/98.jpg'; import nm99 from '../../images/nm/99.jpg';
 import nm100 from '../../images/nm/100.jpg';
 
-// import userImage from '../../images/9.jpg';
-
-window.mobilenetModule = ''
-window.classifier = ''
 
 export default class Detect extends Component {
 
@@ -107,12 +103,13 @@ export default class Detect extends Component {
         try{
             
             // Load mobilenet module
-            window.mobilenetModule = await mobilenet.load({version: 2, alpha: 1});
+            this.mobilenetModule = await mobilenet.load({version: 2, alpha: 1});
             // Add examples to the KNN Classifier
-            window.classifier = await this.trainClassifier(window.mobilenetModule);
-            if(window.classifier !== '' && typeof window.classifier === 'object'){
+            this.classifier = await this.trainClassifier(this.mobilenetModule);
+            if(this.classifier !== '' && typeof this.classifier === 'object'){
                 this.setState({ isLearning: false })
                 this.enableVideo()
+                document.getElementById('tmc').innerHTML = ''
             }
         }
         catch( err ){
@@ -120,30 +117,31 @@ export default class Detect extends Component {
         }
     }
 
-    componentWillUnmount(){
-        this.stop()
-        window.mobilenetModule = ''
-        window.classifier = ''
+    async componentWillUnmount(){
+        const stoppingCamera = await this.stop()
+        if( stoppingCamera ){
+            window.stream = ''
+        }
+        this.mobilenetModule = ''
+        this.classifier = ''
     }
 
 
     start = async () => {
-        if( typeof window.classifier === 'object' && window.mobilenetModule !== '' ){
+        if( typeof this.classifier === 'object' && this.mobilenetModule !== '' ){
             // Predict class for the test image
             const testImage = document.getElementById('test-img');
             const tfTestImage = tf.browser.fromPixels(testImage);
-            const logits = window.mobilenetModule.infer(tfTestImage, 'conv_preds');
-            const prediction = await window.classifier.predictClass(logits);
+            const logits = this.mobilenetModule.infer(tfTestImage, 'conv_preds');
+            const prediction = await this.classifier.predictClass(logits);
 
             if ( prediction.label === 1 || prediction.label === '1' ) { // no mask
                 this.setState({ masked: false })
-                console.log("False")
                 if( this.state.autoCapture ){  
                     this.captureVideo()
                 }
             } else { // has mask - green border
                 this.setState({ masked: true })
-                console.log("True")
                 if( this.state.autoCapture ){  
                     this.captureVideo()
                 }
@@ -192,7 +190,6 @@ export default class Detect extends Component {
     }
 
     captureVideo = () => {
-        console.log("Capturing")
         var canvas = document.getElementById('canvas');
         var video = document.getElementById('user-video');
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -211,19 +208,20 @@ export default class Detect extends Component {
         vid.play()
     }
 
-    stop = () => {
+    stop = async () => {
         try{
             window.stream.getTracks().forEach(function(track) {
                 track.stop();
             });
+            return true
         }
         catch( err ){
             console.log( "Unable to stop the camera." )
+            return false
         }
     }
 
     autoCapture = ( bool ) => {
-        console.log( bool )
         this.setState({ autoCapture: bool }, () => {
             this.captureVideo()
         })
@@ -234,16 +232,20 @@ export default class Detect extends Component {
             <React.Fragment>
                 <Helmet>
                     <title>Detect Mask | {conf.APP_NAME}</title>
+                    <meta
+                        name="description"
+                        content="Detect Mask | Mazk | A mask detecting app."
+                    />
                 </Helmet>
                 {this.state.isLearning ? <Loading /> : null}
                 <Header />
-                <div className="train-images" style={{'display': 'none'}}>
+                <div className="train-images" style={{'display': 'none'}} id="tmc">
                     <img src={ m1 } className="mask-img" alt="" />
-                    {/* <img src={ m2 } className="mask-img" alt="" />
+                    <img src={ m2 } className="mask-img" alt="" />
                     <img src={ m3 } className="mask-img" alt="" />
                     <img src={ m4 } className="mask-img" alt="" />
-                    <img src={ m5 } className="mask-img" alt="" /> */}
-                    {/* <img src={ m6 } className="mask-img" alt="" />
+                    <img src={ m5 } className="mask-img" alt="" />
+                    <img src={ m6 } className="mask-img" alt="" />
                     <img src={ m7 } className="mask-img" alt="" />
                     <img src={ m8 } className="mask-img" alt="" />
                     <img src={ m9 } className="mask-img" alt="" />
@@ -378,15 +380,15 @@ export default class Detect extends Component {
                     <img src={ m138 } className="mask-img" alt="" />
                     <img src={ m139 } className="mask-img" alt="" />
                     <img src={ m140 } className="mask-img" alt="" />
-                    <img src={ m141 } className="mask-img" alt="" /> */}
+                    <img src={ m141 } className="mask-img" alt="" />
 
                     
                     <img src={ nm1 } className="no-mask-img" alt="" />
-                    {/* <img src={ nm2 } className="no-mask-img" alt="" />
+                    <img src={ nm2 } className="no-mask-img" alt="" />
                     <img src={ nm3 } className="no-mask-img" alt="" />
                     <img src={ nm4 } className="no-mask-img" alt="" />
-                    <img src={ nm5 } className="no-mask-img" alt="" /> */}
-                    {/* <img src={ nm6 } className="no-mask-img" alt="" />
+                    <img src={ nm5 } className="no-mask-img" alt="" />
+                    <img src={ nm6 } className="no-mask-img" alt="" />
                     <img src={ nm7 } className="no-mask-img" alt="" />
                     <img src={ nm8 } className="no-mask-img" alt="" />
                     <img src={ nm9 } className="no-mask-img" alt="" />
@@ -480,7 +482,7 @@ export default class Detect extends Component {
                     <img src={ nm97 } className="no-mask-img" alt="" />
                     <img src={ nm98 } className="no-mask-img" alt="" />
                     <img src={ nm99 } className="no-mask-img" alt="" />
-                    <img src={ nm100 } className="no-mask-img" alt="" /> */}
+                    <img src={ nm100 } className="no-mask-img" alt="" />
 
 
                 </div>

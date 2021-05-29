@@ -5,10 +5,17 @@ import howto from "../../assets/howto.svg";
 import step1 from "../../assets/step1.svg";
 import step2 from "../../assets/step2.svg";
 import step3 from "../../assets/step3.svg";
+import Helmet from 'react-helmet'
 class Howtouse extends Component {
     render() {
         return (
           <React.Fragment>
+            <Helmet>
+              <meta
+                  name="description"
+                  content="How To Use | Mazk | A mask detecting app."
+              />
+            </Helmet>
             <Header />
             <div className="container pt-3 aboutcontainer">
               <div className="row">

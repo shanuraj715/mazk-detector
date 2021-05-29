@@ -13,6 +13,10 @@ class Home extends Component {
       <React.Fragment>
         <Helmet>
           <title>Home | {conf.APP_NAME}</title>
+          <meta
+              name="description"
+              content="Mazk | A mask detecting app."
+          />
         </Helmet>
         <Header />
         <section>

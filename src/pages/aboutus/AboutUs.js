@@ -16,6 +16,10 @@ class AboutUs extends Component {
           <React.Fragment>
             <Helmet>
               <title>About Us | {conf.APP_NAME}</title>
+              <meta
+                name="description"
+                content="About Us | Mazk | A mask detecting app."
+              />
             </Helmet>
             <Header />
             <div className="container pt-5 aboutcontainer">
