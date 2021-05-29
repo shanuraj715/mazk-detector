@@ -94,13 +94,12 @@ align-items: center;
      color:white;
      display:grid;
      place-items: center;
-     position: fixed;
-     bottom: 0;
+     
      width: 100vw;
      margin-top: auto;
 }
 .mainsection{
-    min-height:89vh;
+    height: 96vh;
     display:flex;
     margin: 0;
     justify-content: center;
@@ -144,7 +143,7 @@ li a:hover{
 
 }
 .aboutcontainer{
-    min-height: 90vh;
+ min-height: 80vh;
     display:grid;
     place-items: center;
 
@@ -158,7 +157,7 @@ text-align: justify;
     place-items: center;
 }
 .hiddenoverflow{
-    overflow:hidden !important;
+    overflow-y:hidden !important;
 }
 @media screen and (max-width: 768px) {
     .aboutcontent{
