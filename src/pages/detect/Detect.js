@@ -99,6 +99,12 @@ import nm100 from '../../images/nm/100.jpg';
 
 export default class Detect extends Component {
 
+    state = {
+        isLearning: true,
+        masked: null,
+        autoCapture: false
+    }
+
     async componentDidMount(){
         try{
             
@@ -152,12 +158,6 @@ export default class Detect extends Component {
         }
     }
 
-    state = {
-        isLearning: true,
-        masked: null,
-        autoCapture: false
-    }
-
     trainClassifier = async (mobilenetModule) => {
         // Create a new KNN Classifier
         const classifier = knnClassifier.create();
@@ -197,15 +197,20 @@ export default class Detect extends Component {
     }
 
     enableVideo = async () => {
-        const constraints = {
-            audio: false,
-            video: true
+        try{
+            const constraints = {
+                audio: false,
+                video: true
+            }
+            let vid = document.getElementById("user-video")
+            const stream = await navigator.mediaDevices.getUserMedia( constraints )
+            window.stream = stream
+            vid.srcObject = stream
+            vid.play()
         }
-        let vid = document.getElementById("user-video")
-        const stream = await navigator.mediaDevices.getUserMedia( constraints )
-        window.stream = stream
-        vid.srcObject = stream
-        vid.play()
+        catch( err ){
+
+        }
     }
 
     stop = async () => {
