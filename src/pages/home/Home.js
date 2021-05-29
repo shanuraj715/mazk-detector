@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "../../comps/header/Header";
 import Footer from "../../comps/footer/Footer";
 import Helmet from "react-helmet";
-import Mainbg from "../../assets/mainimg.svg";
+import Mainbg from "../../assets/main bg.png";
 import conf from '../../config.json'
 import { Link } from 'react-router-dom'
 

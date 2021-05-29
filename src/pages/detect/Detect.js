@@ -12,9 +12,6 @@ import * as mobilenet from '@tensorflow-models/mobilenet'
 import * as knnClassifier from '@tensorflow-models/knn-classifier'
 
 
-import ReactTooltip from 'react-tooltip'
-
-
 import m1 from '../../images/m/1.jpg'; import m2 from '../../images/m/2.jpg'; import m3 from '../../images/m/3.jpg';
 import m4 from '../../images/m/4.jpg'; import m5 from '../../images/m/5.jpg'; import m6 from '../../images/m/6.jpg';
 import m7 from '../../images/m/7.jpg'; import m8 from '../../images/m/8.jpg'; import m9 from '../../images/m/9.jpg';
@@ -131,8 +128,10 @@ export default class Detect extends Component {
             const prediction = await window.classifier.predictClass(logits);
 
             if ( prediction.label === 1 || prediction.label === '1' ) { // no mask - red border
+                this.setState({ masked: false })
                 console.log("False")
             } else { // has mask - green border
+                this.setState({ masked: true })
                 console.log("True")
             }
         }
@@ -142,8 +141,8 @@ export default class Detect extends Component {
     }
 
     state = {
-        isCameraAccessed: true,
-        isLearning: true
+        isLearning: true,
+        masked: null
     }
 
     trainClassifier = async (mobilenetModule) => {
@@ -191,18 +190,9 @@ export default class Detect extends Component {
         }
         let vid = document.getElementById("user-video")
         const stream = await navigator.mediaDevices.getUserMedia( constraints )
-        console.log( stream )
         window.stream = stream
         vid.srcObject = stream
         vid.play()
-        if( typeof stream === 'object' ){
-            this.setState({ isCameraAccessed: true }, () => {
-                
-            })
-        }
-        else{
-            this.setState({ isCameraAccessed: false })
-        }
     }
 
     stop = () => {
@@ -447,15 +437,7 @@ export default class Detect extends Component {
                     <div className="container mainsection">
                         <div className="row">
                             <div className="col col-12 col-lg-6" style={{'display': 'grid', 'placeItems': 'center'}}>
-                                <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } style={{'display': this.state.isCameraAccess ? "initial" : 'none'}} />
-                                { !this.state.isCameraAccess ? 
-                                    <div className="no-cam-cont">
-                                        <p data-tip data-for="err-camera">Unable to start the camera</p>
-                                        <ReactTooltip place="right" id="err-camera" type="error" place="bottom">
-                                            Browser is unable to access the camera.<br />Please check your device cemera and reload the page.
-                                        </ReactTooltip>
-                                    </div> : null
-                                    }
+                                <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } />
                                 <button type="button" className="btn mainbtn mt-2" onClick={ this.captureVideo }>
                                     Capture Image
                                 </button>
@@ -463,9 +445,18 @@ export default class Detect extends Component {
                             </div>
 
                             <div className="col col-12 col-lg-6 ">
-                                <div className="imgmain">
+                                <div className="imgmain2">
                                     <canvas id="canvas" className="w-100"></canvas>
                                 </div>
+                                { this.state.masked ? 
+                                    <div className="alert alert-success" role="alert">
+                                        Mask Detected
+                                    </div>
+                                    : 
+                                    <div className="alert alert-danger" role="alert">
+                                        Mask Not Detected
+                                    </div>
+                                }
                             </div>
                         </div>
                     </div>

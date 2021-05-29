@@ -28,25 +28,20 @@ export default class Header extends Component {
                 <ul className="navlinks my-auto">
                   <li>
                     <Link to="/">
-                      <i class="fas fa-home "></i>
+                      <i className="fas fa-home "></i>
                       <span> &nbsp; Home</span>
                     </Link>
                   </li>
                   <li>
                     <Link to="/about">
-                      <i class="fas fa-address-card"></i>
+                      <i className="fas fa-address-card"></i>
                       <span>&nbsp; About us</span>
                     </Link>
                   </li>
                   <li>
                     <Link to="/how-to-use">
-                      <i class="fas fa-question-circle"></i>
+                      <i className="fas fa-question-circle"></i>
                       <span>&nbsp; How To Use</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/how-to-use">
-                      How To Use
                     </Link>
                   </li>
                 </ul>
@@ -69,25 +64,20 @@ export default class Header extends Component {
           <ul className="sliderul">
             <li>
               <Link to="/">
-                <i class="fas fa-home "></i>
+                <i className="fas fa-home "></i>
                 <span> &nbsp; Home</span>
               </Link>
             </li>
             <li>
               <Link to="/about">
-                <i class="fas fa-address-card"></i>
+                <i className="fas fa-address-card"></i>
                 <span>&nbsp; About us</span>
               </Link>
             </li>
             <li>
               <Link to="/how-to-use">
-                <i class="fas fa-question-circle"></i>
+                <i className="fas fa-question-circle"></i>
                 <span>&nbsp; How To Use</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/how-to-use">
-                How To Use
               </Link>
             </li>
           </ul>

@@ -67,3 +67,9 @@ canvas{
     margin: 0;
     cursor: pointer;
 }
+
+.imgmain2{
+    border: solid 2px rgba(44, 62, 80, 0.2);
+    min-height: 300px;
+    min-width: 100%;
+}
