@@ -324,7 +324,7 @@ export default class Detect extends Component {
                     <img src={ m82 } className="mask-img" alt="" />
                     <img src={ m83 } className="mask-img" alt="" />
                     <img src={ m84 } className="mask-img" alt="" />
-                    <img src={ m85} className="mask-img" alt="" />
+                    <img src={ m85 } className="mask-img" alt="" />
                     <img src={ m86 } className="mask-img" alt="" />
                     <img src={ m87 } className="mask-img" alt="" />
                     <img src={ m88 } className="mask-img" alt="" />
@@ -508,10 +508,8 @@ export default class Detect extends Component {
                                     }
                                     
                                 </div>
-                                
                                 <br />
                             </div>
-
                             <div className="col col-12 col-lg-6 ">
                                 <div className="imgmain2">
                                     <canvas id="canvas" className="w-100"></canvas>
@@ -535,4 +533,3 @@ export default class Detect extends Component {
         );
     }
 }
-

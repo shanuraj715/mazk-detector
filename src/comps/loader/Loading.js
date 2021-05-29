@@ -6,14 +6,15 @@ export default class Loading extends Component {
         return (
             <div className="loader-container">
                 <div className="loader">
-                    <div className="face face1">
+                    {/* <div className="face face1">
                         <div className="circle"></div>
-                    </div>
+                    </div> */}
                     <div className="face face2">
                         <div className="circle"></div>
                     </div>
-                    <span className="loading-text">Loading Models</span>
+                    <span className="loading-text">Initialzing...</span>
                 </div>
+                <p className="loading-text-p">It may take a while, depends on your internet connection.<br />Please Wait...</p>
             </div>
             
         )

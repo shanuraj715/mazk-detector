@@ -1,0 +1,32 @@
+
+
+.db-err404-container{
+    text-align: center;
+    background-image: url(./bg1.png);
+}
+
+.db-err404-header{
+    background-color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+.db-err404-header span{
+    font-size: 34px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.db-err404-content{
+    margin-top: 100px;
+}
+
+.db-err404-content img{
+    max-width: calc(100vw - 80%);
+}
+
+.db-err404-content p{
+    margin-top: 20px;
+    font-size: 26px;
+    color: rgba(75, 75, 75,1.0);
+}
