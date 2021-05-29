@@ -8,11 +8,6 @@ import { Link } from 'react-router-dom'
 
 class Home extends Component {
 
-
-  componentDidMount() {
-    console.log("page visible");
-  }
-
   render() {
     return (
       <React.Fragment>

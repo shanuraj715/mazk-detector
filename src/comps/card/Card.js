@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import aboutimg from "../../assets/about.png";
 export default class Card extends Component {
     render() {
         return (
           <React.Fragment>
             <div className="col col-12 col-md-6 col-lg-3 cardcontainer text-center ">
-              <div className="card" style={{ width: "100%" }}>
+              <div className="card mt-2" style={{ width: "100%" }}>
                 <img
                   src={this.props.image}
                   className="card-img-top"
@@ -18,7 +17,7 @@ export default class Card extends Component {
                   <h5 className="card-title">{this.props.uname}</h5>
                   <p className="card-text">Student @JIMS rohini sec-5</p>
                   <a
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                     href={this.props.github || "/"}
                     className="btn  w-100"
                     style={{ backgroundColor: "#2C3E50", color: "#fff" }}
@@ -27,7 +26,7 @@ export default class Card extends Component {
                   </a>
 
                   <a
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                     href={this.props.instagram}
                     className="btn  w-100 mt-2"
                     style={{ backgroundColor: "#2C3E50", color: "#fff" }}
