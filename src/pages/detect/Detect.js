@@ -127,12 +127,18 @@ export default class Detect extends Component {
             const logits = window.mobilenetModule.infer(tfTestImage, 'conv_preds');
             const prediction = await window.classifier.predictClass(logits);
 
-            if ( prediction.label === 1 || prediction.label === '1' ) { // no mask - red border
+            if ( prediction.label === 1 || prediction.label === '1' ) { // no mask
                 this.setState({ masked: false })
                 console.log("False")
+                if( this.state.autoCapture ){  
+                    this.captureVideo()
+                }
             } else { // has mask - green border
                 this.setState({ masked: true })
                 console.log("True")
+                if( this.state.autoCapture ){  
+                    this.captureVideo()
+                }
             }
         }
         else{
@@ -142,7 +148,8 @@ export default class Detect extends Component {
 
     state = {
         isLearning: true,
-        masked: null
+        masked: null,
+        autoCapture: false
     }
 
     trainClassifier = async (mobilenetModule) => {
@@ -177,6 +184,7 @@ export default class Detect extends Component {
     }
 
     captureVideo = () => {
+        console.log("Capturing")
         var canvas = document.getElementById('canvas');
         var video = document.getElementById('user-video');
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -204,6 +212,13 @@ export default class Detect extends Component {
         catch( err ){
             console.log( "Unable to stop the camera." )
         }
+    }
+
+    autoCapture = ( bool ) => {
+        console.log( bool )
+        this.setState({ autoCapture: bool }, () => {
+            this.captureVideo()
+        })
     }
 
     render() {
@@ -438,9 +453,22 @@ export default class Detect extends Component {
                         <div className="row">
                             <div className="col col-12 col-lg-6" style={{'display': 'grid', 'placeItems': 'center'}}>
                                 <video src='' className="w-100" id="user-video" controls={ false } autoPlay={ false } />
-                                <button type="button" className="btn mainbtn mt-2" onClick={ this.captureVideo }>
-                                    Capture Image
-                                </button>
+                                <div style={{'display': 'flex', 'justifyContent': 'space-evenly', 'flexWrap': 'nowrap', 'alignItems': 'center'}}>
+                                    <button type="button" className="btn mainbtn mt-2 mx-1" onClick={ this.captureVideo }>
+                                        Capture Image
+                                    </button>
+                                    { !this.state.autoCapture ? 
+                                        <button type="button" className="btn mainbtn mt-2 mx-1" onClick={ () => this.autoCapture( true ) }>
+                                            Auto Capture
+                                        </button>
+                                        : 
+                                        <button type="button" className="btn mainbtn mt-2 mx-1" onClick={ () => this.autoCapture( false ) }>
+                                            Stop Auto Cap
+                                        </button>
+                                    }
+                                    
+                                </div>
+                                
                                 <br />
                             </div>
 
