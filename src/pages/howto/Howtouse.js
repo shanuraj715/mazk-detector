@@ -35,21 +35,21 @@ class Howtouse extends Component {
             </div>
             <div className="container ">
               <div className="row">
-                <div className="col col-12 col-md-4">
+                <div className="col col-12 col-md-4 centerrr">
                   <img
                     src={step1}
                     className="img-fluid my-auto "
                     alt="..."
                   ></img>
                 </div>
-                <div className="col col-12 col-md-4">
+                <div className="col col-12 col-md-4 centerrr">
                   <img
                     src={step2}
                     className="img-fluid my-auto"
                     alt="..."
                   ></img>
                 </div>
-                <div className="col col-12 col-md-4">
+                <div className="col col-12 col-md-4 centerrr">
                   <img
                     src={step3}
                     className="img-fluid my-auto"
