@@ -195,7 +195,7 @@ export default class Detect extends Component {
             vid.play()
         }
         catch( e ){
-
+            
         }
     }
 
