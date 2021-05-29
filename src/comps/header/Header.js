@@ -30,10 +30,22 @@ export default class Header extends Component {
               <div className="list">
                 <ul className="navlinks my-auto">
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/">
+                      <i class="fas fa-home "></i>
+                      <span> &nbsp; Home</span>
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/about">About Us</Link>
+                    <Link to="/about">
+                      <i class="fas fa-address-card"></i>
+                      <span>&nbsp; About us</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/how-to-use">
+                      <i class="fas fa-question-circle"></i>
+                      <span>&nbsp; How To Use</span>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -55,10 +67,22 @@ export default class Header extends Component {
 
           <ul className="sliderul">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <i class="fas fa-home "></i>
+                <span> &nbsp; Home</span>
+              </Link>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about">
+                <i class="fas fa-address-card"></i>
+                <span>&nbsp; About us</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/how-to-use">
+                <i class="fas fa-question-circle"></i>
+                <span>&nbsp; How To Use</span>
+              </Link>
             </li>
           </ul>
         </div>

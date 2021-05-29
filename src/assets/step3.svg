@@ -1,0 +1,10 @@
+<svg id="Component_3_1" data-name="Component 3 – 1" xmlns="http://www.w3.org/2000/svg" width="454" height="304" viewBox="0 0 454 304">
+  <g id="Rectangle_17" data-name="Rectangle 17" fill="#2c3e50" stroke="#707070" stroke-width="1">
+    <rect width="454" height="265" stroke="none"/>
+    <rect x="0.5" y="0.5" width="453" height="264" fill="none"/>
+  </g>
+  <text id="Click_on_capture_image_button" data-name="Click on capture image 
+button" transform="translate(31 58)" fill="#fff" font-size="30" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Click on capture image </tspan><tspan x="0" y="46">button</tspan></text>
+  <text id="_3" data-name="3" transform="translate(311 232)" fill="#fff" font-size="207" font-family="Poppins-Regular, Poppins" opacity="0.31"><tspan x="0" y="0">3</tspan></text>
+  <text id="step" transform="translate(154 229)" fill="#fff" font-size="67" font-family="Poppins-Regular, Poppins" opacity="0.3"><tspan x="0" y="0">step</tspan></text>
+</svg>
